@@ -5,77 +5,135 @@
 <title>Lahari Iyyunni</title>
 
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #1a1a1a;
-  }
+/* --- Global Styles --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
 
-  header {
-    background: #f8f8f8;
-    padding: 30px 20px;
-    text-align: center;
-  }
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
 
-  header h1 {
-    margin: 0;
-    font-size: 2.8rem;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
-  header p {
-    margin: 4px 0;
-    font-size: 1.1rem;
-    color: #555;
-  }
+/* --- Header --- */
+header {
+  background: #f8f8f8;
+  padding: 30px 20px;
+  text-align: center;
+}
 
-  nav {
-    background: #222;
-    padding: 12px 0;
-    text-align: center;
-  }
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
 
-  nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
+header p {
+  margin: 4px 0;
+  font-size: 1.1rem;
+  color: #555;
+}
 
-  nav a:hover {
-    text-decoration: underline;
-  }
+/* --- Navigation --- */
+nav {
+  background: #222;
+  padding: 12px 0;
+  text-align: center;
+}
 
-  section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
-  }
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+}
 
-  section h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 6px;
-    margin-bottom: 15px;
-  }
+/* --- Section --- */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-  .intro img {
-    width: 160px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 20px;
-  }
+section h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
 
-  .intro p {
-    margin: 0;
-  }
+/* --- About Me --- */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 40px;
+}
 
-  footer {
-    text-align: center;
-    padding: 25px;
-    background: #f1f1f1;
-    font-size: 0.9rem;
-    color: #555;
-  }
+.intro img {
+  width: 160px;
+  border-radius: 50%;
+}
+
+.intro p {
+  margin: 0;
+}
+
+/* --- Timeline Columns --- */
+.timeline-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.timeline-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.timeline {
+  border-left: 2px solid #0366d6;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: #0366d6;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #0366d6;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+  color: #555;
+}
 </style>
 
 </head>
@@ -88,37 +146,62 @@
 
 <nav>
   <a href="#about">About Me</a>
-  <a href="#experience">Experience</a>
   <a href="#research">Research</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- About Me -->
 <section id="about">
   <h2>About Me</h2>
   <div class="intro">
     <img src="profile.jpg" alt="Profile Photo">
     <p>Hello! I’m Lahari — a graduate student and researcher interested in machine learning and data science. I enjoy building models that solve real problems and sharing what I learn.</p>
   </div>
-  <div style="clear:both;"></div>
+
+  <div class="timeline-container">
+    <!-- Education Timeline -->
+    <div class="timeline-column">
+      <h3>Education</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2022 – Present</span>
+          <p><b>Masters in Computer Science</b>, University Name</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2018 – 2022</span>
+          <p><b>Bachelor of Technology</b>, College Name</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Timeline -->
+    <div class="timeline-column">
+      <h3>Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2024 – Present</span>
+          <p><b>Research Assistant</b>, Lab or Organization Name</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2023 – 2024</span>
+          <p><b>Data Science Intern</b>, Company Name</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <ul>
-    <li><b>Role/Title</b> — Short description of your work (Year–Present)</li>
-    <li><b>Another Role</b> — Description of responsibilities (Year–Year)</li>
-  </ul>
-</section>
-
+<!-- Research / Projects -->
 <section id="research">
-  <h2>Research</h2>
-  <p>Describe your research interests, projects, or papers.</p>
+  <h2>Research & Projects</h2>
   <ul>
-    <li><b>Project/Paper Title</b> – Brief description, key results.</li>
-    <li><b>Another Project</b> – Brief description, tools/techniques used.</li>
+    <li><b>Project/Paper Title</b> – Brief description of the project or results.</li>
+    <li><b>Another Project</b> – Techniques, tools, or outcomes.</li>
+    <li><b>Research Paper</b> – Journal/Conference reference.</li>
   </ul>
 </section>
 
+<!-- Contact -->
 <section id="contact">
   <h2>Contact</h2>
   <p>
