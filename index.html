@@ -2,9 +2,94 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lahari Iyyunni</title>
+  
+ <!-- Google Fonts - Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+       <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-105631264-1', 'auto');
+	  ga('send', 'pageview');
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8M2DJ91XGL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8M2DJ91XGL');
+</script>
+    <!-- CRITICAL: Apply dark mode immediately to prevent flash -->
+    <script>
+        // Check for saved preference and apply dark mode immediately
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            // Support: 'light', 'dark', or 'system' (default)
+            if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark-mode-init');
+            } else if (savedTheme === 'light') {
+                // Light mode - no class needed
+            } else {
+                // System preference (default)
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.classList.add('dark-mode-init');
+                }
+            }
+        })();
+    </script>
+
+ <!-- Critical styles for  dark mode -->
+<style>
+        /* Immediate dark mode to prevent flash */
+        .dark-mode-init,
+        .dark-mode {
+            background-color: #121212;
+            color: #e2e8f0;
+        }
+        
+        /* Pre-apply dark mode to all sections to prevent flash */
+        .dark-mode-init .bg-white,
+        .dark-mode .bg-white {
+            background-color: #1a202c !important;
+        }
+        
+        .dark-mode-init .bg-gray-50,
+        .dark-mode .bg-gray-50 {
+            background-color: #1e293b !important;
+        }
+        
+        .dark-mode-init .bg-gray-100,
+        .dark-mode .bg-gray-100 {
+            background-color: #171923 !important;
+        }
+        
+        /* Ensure section text colors are correct in dark mode */
+        .dark-mode-init section,
+        .dark-mode section {
+            color: #e2e8f0;
+        }
+        
+        /* Fix specific section backgrounds */
+        .dark-mode-init #bio,
+        .dark-mode #bio {
+            background-color: #1a202c !important;
+        }
+</style>
 <style>
   /* --- Global Styles --- */
+  
   html { scroll-behavior: smooth; }
   body {
     font-family: Arial, sans-serif;
