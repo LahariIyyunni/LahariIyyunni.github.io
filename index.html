@@ -1,164 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Lahari Iyyunni</title>
 
 <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+  }
 
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  line-height: 1.6;
-  color: #333;
-}
+  header {
+    background: #f8f8f8;
+    padding: 30px 20px;
+    text-align: center;
+  }
 
-header{
-  text-align: center;
-  margin-bottom: 40px;
-}
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+  }
 
-nav{
-  text-align: center;
-  margin-bottom: 40px;
-}
+  header p {
+    margin: 4px 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
 
-nav a{
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #0366d6;
-}
+  nav {
+    background: #222;
+    padding: 12px 0;
+    text-align: center;
+  }
 
-nav a:hover{
-  text-decoration: underline;
-}
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-section{
-  margin-bottom: 50px;
-}
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-h2{
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
-}
+  section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
 
-.profile{
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
+  section h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+  }
 
-.profile img{
-  width: 140px;
-  border-radius: 50%;
-}
+  .intro img {
+    width: 160px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+  }
 
-ul{
-  padding-left: 20px;
-}
+  .intro p {
+    margin: 0;
+  }
 
-footer{
-  text-align: center;
-  color: #777;
-  margin-top: 60px;
-  font-size: 14px;
-}
-
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: #f1f1f1;
+    font-size: 0.9rem;
+    color: #555;
+  }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-<h1>Lahari Iyyunni</h1>
-<p>Graduate Student | Researcher | Data Scientist</p>
+  <h1>Lahari Iyyunni</h1>
+  <p>Machine Learning • Data Science • Research</p>
 </header>
 
 <nav>
-<a href="#bio">Bio</a>
-<a href="#projects">Projects</a>
-<a href="#publications">Publications</a>
-<a href="#contact">Contact</a>
+  <a href="#about">About Me</a>
+  <a href="#experience">Experience</a>
+  <a href="#research">Research</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<section id="bio">
-
-<div class="profile">
-
-<img src="profile.jpg" alt="profile photo">
-
-<div>
-<h2>Bio</h2>
-
-<p>
-I am a researcher interested in machine learning, data science,
-and computational methods. My work focuses on applying data-driven
-techniques to solve real-world problems.
-</p>
-
-</div>
-</div>
-
+<section id="about">
+  <h2>About Me</h2>
+  <div class="intro">
+    <img src="profile.jpg" alt="Profile Photo">
+    <p>Hello! I’m Lahari — a graduate student and researcher interested in machine learning and data science. I enjoy building models that solve real problems and sharing what I learn.</p>
+  </div>
+  <div style="clear:both;"></div>
 </section>
 
-<section id="projects">
-
-<h2>Projects</h2>
-
-<ul>
-<li>
-<b>Project Name</b> – Short description of what you built or studied.
-</li>
-
-<li>
-<b>Another Project</b> – Brief explanation of the work.
-</li>
-
-<li>
-<b>Research Project</b> – Dataset, model, or methodology used.
-</li>
-
-</ul>
-
+<section id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li><b>Role/Title</b> — Short description of your work (Year–Present)</li>
+    <li><b>Another Role</b> — Description of responsibilities (Year–Year)</li>
+  </ul>
 </section>
 
-<section id="publications">
-
-<h2>Publications</h2>
-
-<ul>
-
-<li>
-Author Name, Author Name. <i>Paper Title.</i> Conference/Journal, Year.
-</li>
-
-<li>
-Author Name. <i>Another Paper Title.</i> Journal, Year.
-</li>
-
-</ul>
-
+<section id="research">
+  <h2>Research</h2>
+  <p>Describe your research interests, projects, or papers.</p>
+  <ul>
+    <li><b>Project/Paper Title</b> – Brief description, key results.</li>
+    <li><b>Another Project</b> – Brief description, tools/techniques used.</li>
+  </ul>
 </section>
 
 <section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: your.email@domain.com</p>
-
-<p>
-<a href="https://github.com/LahariIyyunni">GitHub</a> |
-<a href="https://linkedin.com/">LinkedIn</a> |
-<a href="resume.pdf">CV</a>
-</p>
-
+  <h2>Contact</h2>
+  <p>
+    Email: <a href="mailto:your.email@domain.com">your.email@domain.com</a><br>
+    <a href="https://github.com/LahariIyyunni">GitHub</a> • 
+    <a href="https://linkedin.com/">LinkedIn</a> • 
+    <a href="resume.pdf">Resume PDF</a>
+  </p>
 </section>
 
 <footer>
-<p>© 2026 Lahari Iyyunni</p>
+  © 2026 Lahari Iyyunni
 </footer>
 
 </body>
