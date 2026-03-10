@@ -2,116 +2,161 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lahari Iyyunni - Full Stack Cloud Data Engineer specializing in data pipelines, cloud platforms, and machine learning.">
 <title>Lahari Iyyunni</title>
+
 <style>
-  /* Global styles */
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0; padding: 0;
-    color: #1a1a1a;
-    line-height: 1.6;
-    background: #fff;
-  }
-  a { color: #0366d6; text-decoration: none; }
-  a:hover { text-decoration: underline; }
 
-  header {
-    background: #f8f8f8;
-    padding: 30px 20px;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: bold;
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeIn 1s forwards;
-  }
-  nav {
-    background: #222;
-    padding: 12px 0;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeIn 1s forwards 0.3s;
-  }
-  nav a {
-    color: #fff;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
-  section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-    animation-delay: 0.5s;
-  }
-  section h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-  }
-  /* About Me */
-  .intro {
-    display: flex;
-    gap: 25px;
-    align-items: flex-start;
-    margin-bottom: 40px;
-  }
-  .intro img {
-    width: 160px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-  }
-  .intro img:hover {
-    transform: scale(1.05);
-  }
-  .intro p {
-    margin: 0;
-    font-size: 1.1rem;
-  }
+/* Global styles */
+html { scroll-behavior: smooth; }
 
-  /* Timeline container */
-  .timeline-container {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    justify-content: center;
-  }
-  .card-style {
-    background: #f9fbfc;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    padding: 30px 30px 40px;
-    flex: 1;
-    min-width: 320px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #1a1a1a;
+  line-height: 1.6;
+  background: #fff;
+}
 
- .timeline-list {
+a { color: #0366d6; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+
+header {
+  background: #f8f8f8;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1s forwards;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f7f9fc;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Navigation */
+
+nav {
+  background: #222;
+  padding: 12px 0;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1s forwards 0.3s;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a.active {
+  color: #5a9cf7;
+}
+
+/* Sections */
+
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
+
+section h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* About */
+
+.intro {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.intro img {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.intro img:hover {
+  transform: scale(1.05);
+}
+
+.intro p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Timeline */
+
+.timeline-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.card-style {
+  background: #f9fbfc;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  padding: 30px 30px 40px;
+  flex: 1;
+  min-width: 320px;
+}
+
+.timeline-list {
   position: relative;
-  padding-left: 60px; /* Increased padding to make room for dots */
+  padding-left: 60px;
   margin-top: 20px;
 }
 
 .timeline-list::before {
   content: '';
   position: absolute;
-  left: 30px; /* Vertical line shifted left */
+  left: 30px;
   top: 0;
   bottom: 0;
   width: 2px;
   background: #5a9cf7;
   border-radius: 2px;
 }
-/*
+
 .timeline-dot {
   position: absolute;
-  left: 22px; /* Dot shifted left, centered on vertical line */
+  left: 22px;
   top: 6px;
   width: 16px;
   height: 16px;
@@ -121,214 +166,281 @@
   box-sizing: border-box;
   transition: all 0.3s;
 }
-  */
-  .timeline-item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 30px;
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: slideIn 0.6s forwards;
-  }
-  .timeline-item:nth-child(1) { animation-delay: 0.3s; }
-  .timeline-item:nth-child(2) { animation-delay: 0.5s; }
-  .timeline-item:nth-child(3) { animation-delay: 0.7s; }
-  .timeline-item:nth-child(4) { animation-delay: 0.9s; }
-  .timeline-item:hover .timeline-dot {
-    transform: scale(1.3);
-    border-color: #ff6f61;
-  }
-  .timeline-content {
-    max-width: 70%;
-  }
-  .timeline-content p {
-    margin: 0;
-    font-weight: 600;
-    color: #222;
-    font-size: 1rem;
-    line-height: 1.3;
-  }
-  .subtext {
-    color: #777;
-    font-weight: 400;
-    font-size: 0.9rem;
-    margin-top: 3px;
-    display: block;
-  }
-  .timeline-date {
-    color: #5a9cf7;
-    font-weight: 600;
-    font-size: 0.95rem;
-    min-width: 90px;
-    text-align: right;
-    white-space: nowrap;
-  }
-  @media (max-width: 700px) {
-    .timeline-container {
-      flex-direction: column;
-    }
-    .timeline-content {
-      max-width: 60%;
-    }
-    .timeline-date {
-      min-width: 80px;
-      font-size: 0.9rem;
-    }
-  }
 
-  /* Core Competencies & Projects & Achievements */
-  ul {
-    padding-left: 20px;
-  }
-  ul li {
-    margin-bottom: 10px;
-  }
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.6s forwards;
+}
 
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 25px;
-    background: #f1f1f1;
-    font-size: 0.9rem;
-    color: #555;
-  }
+.timeline-item:nth-child(1) { animation-delay: 0.3s; }
+.timeline-item:nth-child(2) { animation-delay: 0.5s; }
+.timeline-item:nth-child(3) { animation-delay: 0.7s; }
+.timeline-item:nth-child(4) { animation-delay: 0.9s; }
 
-  /* Animations */
-  @keyframes fadeIn {
-    to { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes slideIn {
-    to { opacity: 1; transform: translateX(0); }
-  }
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.3);
+  border-color: #ff6f61;
+}
+
+.timeline-content {
+  max-width: 70%;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+}
+
+.subtext {
+  color: #777;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.timeline-date {
+  color: #5a9cf7;
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 90px;
+  text-align: right;
+}
+
+/* Lists */
+
+ul { padding-left: 20px; }
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Button */
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #5a9cf7;
+  color: white;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #3c7edb;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  to { opacity: 1; transform: translateX(0); }
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-  Lahari Iyyunni
+Lahari Iyyunni
 </header>
 
+<section class="hero">
+<h1>Full Stack Cloud Data Engineer</h1>
+<p>Designing scalable data platforms and enabling data-driven decision making.</p>
+</section>
+
 <nav>
-  <a href="#about">About Me</a>
-  <a href="#education-experience">Professional Journey</a>
-  <a href="#competencies">Core Competencies</a>
-  <a href="#projects">Projects</a>
-  <a href="#achievements">Achievements</a>
-  <a href="#contact">Contact</a>
+<a href="#about">About Me</a>
+<a href="#education-experience">Professional Journey</a>
+<a href="#competencies">Core Competencies</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-  <h2>About Me</h2>
-  <div class="intro">
-    <img src="https://avatars.githubusercontent.com/u/66288088?s=400&u=1f936e5414f30a3905169bbd9e5d1c51e0e961f5&v=4"Profile Photo" />
-    <p>Hello! I’m Lahari, a Data Enthusiast passionate about designing/building robust data pipelines and enabling data driven decision making. 
-    I love solving real-world problems and sharing what I learn along the way. 
-    I aspire to lead data-driven teams that drive innovation, empower decision-making, and foster a culture of continuous learning..</p>
-  </div>
+<h2>About Me</h2>
+
+<div class="intro">
+
+<img src="https://avatars.githubusercontent.com/u/66288088?s=400&v=4" alt="Profile Photo"/>
+
+<p>
+Hello! I’m Lahari, a Data Enthusiast passionate about designing and building robust data pipelines and enabling data-driven decision making.  
+I love solving real-world problems and sharing what I learn along the way.  
+I aspire to lead data-driven teams that drive innovation, empower decision-making, and foster a culture of continuous learning.
+</p>
+
+</div>
 </section>
 
 <section id="education-experience">
-  <h2>Professional Journey</h2>
-  <div class="timeline-container">
+<h2>Professional Journey</h2>
 
-    <div class="timeline-column card-style">
-      <h3>Education</h3>
-      <div class="timeline-list">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <p><strong>University of Michigan</strong><br />
-            <span class="subtext">M.Sc. in Business Analytics - Data Engineering and Quality Analytics</span></p>
-          </div>
-          <div class="timeline-date">2016 – 2018</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p><strong>National Institute of Technology Warangal</strong><br />
-            <span class="subtext">B.Tech. in Metallurgical and Material Science Engineering</span></p>
-          </div>
-          <div class="timeline-date">2011 – 2015</div>
-        </div>
-      </div>
-    </div>
+<div class="timeline-container">
 
-    <div class="timeline-column card-style">
-      <h3>Experience</h3>
-      <div class="timeline-list">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p><strong>Full Stack Cloud Data Engineer Sr, Quality and Architecture</strong><br />
-            <span class="subtext">Ford Motor Company</span></p>
-          </div>
-          <div class="timeline-date">2021 – Present</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p><strong>Senior Machine Learning Engineer</strong><br />
-            <span class="subtext">Epitec.Inc</span></p>
-          </div>
-          <div class="timeline-date">2018 – 2021</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p><strong>Data Engineering Intern</strong><br />
-            <span class="subtext">Delphi Technologies</span></p>
-          </div>
-          <div class="timeline-date">2017 – 2018</div>
-        </div>
-      </div>
-    </div>
+<div class="timeline-column card-style">
 
-  </div>
+<h3>Education</h3>
+
+<div class="timeline-list">
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<p><strong>University of Michigan</strong><br>
+<span class="subtext">M.Sc. in Business Analytics - Data Engineering and Quality Analytics</span></p>
+</div>
+<div class="timeline-date">2016 – 2018</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<p><strong>National Institute of Technology Warangal</strong><br>
+<span class="subtext">B.Tech. in Metallurgical and Material Science Engineering</span></p>
+</div>
+<div class="timeline-date">2011 – 2015</div>
+</div>
+
+</div>
+</div>
+
+<div class="timeline-column card-style">
+
+<h3>Experience</h3>
+
+<div class="timeline-list">
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<p><strong>Full Stack Cloud Data Engineer Sr, Quality and Architecture</strong><br>
+<span class="subtext">Ford Motor Company</span></p>
+</div>
+<div class="timeline-date">2021 – Present</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<p><strong>Senior Machine Learning Engineer</strong><br>
+<span class="subtext">Epitec Inc</span></p>
+</div>
+<div class="timeline-date">2018 – 2021</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+<p><strong>Data Engineering Intern</strong><br>
+<span class="subtext">Delphi Technologies</span></p>
+</div>
+<div class="timeline-date">2017 – 2018</div>
+</div>
+
+</div>
+</div>
+
+</div>
 </section>
 
 <section id="competencies">
-  <h2>Core Competencies</h2>
-  <ul>
-    <li>Data Engineering & ETL Pipelines</li>
-    <li>Cloud Platforms (AWS, GCP)</li>
-    <li>Data Quality & Architecture</li>
-    <li>Python, SQL, Spark</li>
-    <li>Machine Learning & Data Science</li>
-  </ul>
+<h2>Core Competencies</h2>
+<ul>
+<li>Data Engineering & ETL Pipelines</li>
+<li>Cloud Platforms (AWS, GCP)</li>
+<li>Data Quality & Architecture</li>
+<li>Python, SQL, Spark</li>
+<li>Machine Learning & Data Science</li>
+</ul>
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Project A:</strong> Built scalable ETL pipelines processing 1M+ records daily.</li>
-    <li><strong>Project B:</strong> Developed data quality framework using Python and Airflow.</li>
-    <li><strong>Project C:</strong> Implemented Dynamic Pricing Engine Model for Electric vehicles.</li>
-  </ul>
+<h2>Projects</h2>
+<ul>
+<li><strong>Project A:</strong> Built scalable ETL pipelines processing 1M+ records daily.</li>
+<li><strong>Project B:</strong> Developed data quality framework using Python and Airflow.</li>
+<li><strong>Project C:</strong> Implemented Dynamic Pricing Engine Model for Electric vehicles.</li>
+</ul>
 </section>
 
 <section id="achievements">
-  <h2>Achievements</h2>
-  <ul>
-    <li>YYY.</li>
-    <li>Certified GCP Data eEngineering.</li>
-    <li>XXX.</li>
-  </ul>
+<h2>Achievements</h2>
+<ul>
+<li>YYY</li>
+<li>Certified GCP Data Engineering</li>
+<li>XXX</li>
+</ul>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:liyyunni@umich.edu">your.email@domain.com</a><br />
-    <a href="https://github.com/LahariIyyunni">GitHub</a> •
-    <a href="https://linkedin.com/lahariiyyunni">LinkedIn</a> •
-    <a href="resume.pdf">Resume PDF</a>
-  </p>
+<h2>Contact</h2>
+
+<p>
+Email: <a href="mailto:liyyunni@umich.edu">liyyunni@umich.edu</a><br><br>
+
+<a href="https://github.com/LahariIyyunni">GitHub</a> •
+<a href="https://linkedin.com/in/lahariiyyunni">LinkedIn</a><br><br>
+
+<a href="resume.pdf" class="button">Download Resume</a>
+</p>
+
 </section>
 
 <footer>
-  © 2026 Lahari Iyyunni
+© 2026 Lahari Iyyunni
 </footer>
+
+<script>
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+
+let current = "";
+
+sections.forEach(section => {
+const sectionTop = section.offsetTop - 100;
+
+if (scrollY >= sectionTop) {
+current = section.getAttribute("id");
+}
+});
+
+navLinks.forEach(link => {
+link.classList.remove("active");
+
+if (link.getAttribute("href").includes(current)) {
+link.classList.add("active");
+}
+});
+
+});
+
+</script>
 
 </body>
 </html>
