@@ -102,30 +102,42 @@ line-height: 1.5;
 max-width: 700px;
 }
 
-#Learn more section
-.learn-more{
-text-align:center;
-padding:25px 0;
-background:#2f4f7f; /* optional if you want the blue background */
+/* LEARN-MORE */
+.learn-more {
+  text-align: center; /* center the container */
+  margin-top: -10px;
+  margin-bottom: 40px;
 }
 
-.learn-more a{
-color:white;
-font-size:1.1rem;
-font-weight:600;
-display:inline-block;
+.learn-more a {
+  display: inline-block;       /* shrink link to content */
+  color: #5a9cf7;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;          /* center text inside link */
+  cursor: pointer;             /* pointer on hover */
+  text-decoration: none;       /* no underline by default */
 }
 
-.learn-more .arrow{
-display:block;
-font-size:32px;
-margin-top:5px;
-animation:bounce 1.6s infinite;
+.learn-more a:hover {
+  text-decoration: underline; /* underline on hover */
 }
 
-@keyframes bounce{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(6px);}
+.learn-text {
+  display: block;              /* put “Learn More” on its own line */
+  margin-bottom: 5px;
+}
+
+.arrow {
+  display: block;              /* arrow on a new line */
+  font-size: 28px;
+  animation: bounce 1.6s infinite;
+  user-select: none;           /* prevent selecting arrow */
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
 }
 /* TIMELINE */
 
@@ -293,9 +305,11 @@ Outside of work, I’m a proud mom to a wonderful little boy and enjoy painting 
 
 </section>
 
-<div class="learn-more">
-<a href="#journey">Learn More</a>
-<div class="arrow">⌄</div>
+  <div class="learn-more">
+  <a href="#journey">
+    <span class="learn-text">Learn More</span>
+    <span class="arrow">⌄</span>
+  </a>
 </div>
 
 <section id="journey">
