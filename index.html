@@ -460,45 +460,92 @@
             </section>
 
             <!-- Projects Section -->
-            <section id="projects">
-                <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">Projects</h2>
-                <hr class="gradient-underline w-24 mb-8">
-                <!-- This grid will be populated by JavaScript -->
-                <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    <div
-                        class="flex flex-col justify-center items-center bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-lg border-2 border-dashed border-light-border dark:border-dark-border transition-colors duration-300">
-                        <h3 class="text-lg font-semibold text-light-text-med dark:text-dark-text-med">
-                            Dynamic Pricing Engine
-                            <p>Machine learning pricing model for electric vehicles using demand signals and historical sales data.</p>
-                            <div class="project-tech">Python • Spark • ML • AWS</div>
-                            <a href="https://github.com/">View Code</a>
-                        </h3>
-                    </div>
-                    <div
-                        class="flex flex-col justify-center items-center bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-lg border-2 border-dashed border-light-border dark:border-dark-border transition-colors duration-300">
-                        <h3 class="text-lg font-semibold text-light-text-med dark:text-dark-text-med">
-                            Data Quality Framework
-                            <p>Machine learning pricing model for electric vehicles using demand signals and historical sales data.</p>
-                            <div class="project-tech">Python • Spark • ML • AWS</div>
-                            <a href="https://github.com/">View Code</a>
-                        </h3>
-                    </div>
-                </div>
-                    <div
-                        class="flex flex-col justify-center items-center bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-lg border-2 border-dashed border-light-border dark:border-dark-border transition-colors duration-300">
-                        <h3 class="text-lg font-semibold text-light-text-med dark:text-dark-text-med">
-                            Third project
-                            <p>Machine learning pricing model for electric vehicles using demand signals and historical sales data.</p>
-                            <div class="project-tech">Python • Spark • ML • AWS</div>
-                            <a href="https://github.com/">View Code</a>
-                        </h3>
-                    </div>
-                </div>
-            </section>
+<section id="projects">
+    <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">
+        Projects
+    </h2>
+    <hr class="gradient-underline w-24 mb-8">
 
-            <section id="projects">
+    <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+        <!-- Project 1 -->
+        <div class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
+            
+            <h3 class="text-xl font-bold text-light-text-dark dark:text-white mb-2">
+                Dynamic Pricing Engine
+            </h3>
 
+            <p class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
+                Machine learning pricing model for electric vehicles using demand signals, market trends,
+                and historical sales data to optimize pricing strategies.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Spark</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">ML</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">AWS</span>
+            </div>
+
+            <a href="https://github.com/" class="text-blue-500 hover:text-blue-600 text-sm font-medium">
+                View Code →
+            </a>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
+            
+            <h3 class="text-xl font-bold text-light-text-dark dark:text-white mb-2">
+                Data Quality Framework
+            </h3>
+
+            <p class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
+                Automated framework for validating datasets across ingestion and transformation layers
+                with configurable rules, anomaly detection, and pipeline alerts.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Spark</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Airflow</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">SQL</span>
+            </div>
+
+            <a href="https://github.com/" class="text-blue-500 hover:text-blue-600 text-sm font-medium">
+                View Code →
+            </a>
+
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
+            
+            <h3 class="text-xl font-bold text-light-text-dark dark:text-white mb-2">
+                Real-Time Data Pipeline
+            </h3>
+
+            <p class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
+                Streaming pipeline ingesting vehicle telemetry events and processing them in near real-time
+                to power analytics dashboards and monitoring systems.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">PySpark</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Kafka</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">BigQuery</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Airflow</span>
+            </div>
+
+            <a href="https://github.com/" class="text-blue-500 hover:text-blue-600 text-sm font-medium">
+                View Code →
+            </a>
+
+        </div>
+
+    </div>
+</section>
+            
 
             <!-- Education & Certifications Section -->
             <section id="education">
