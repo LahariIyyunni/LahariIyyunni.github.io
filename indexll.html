@@ -1,0 +1,706 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahari Iyyunni | CLOUD DATA & ANALYTICS | AI/ML | TECHNICAL LEADERSHIP</title>
+    
+    <meta name="robots" content="index, follow">
+    
+    <meta name="description" content="Personal portfolio for Lahari Iyyunni, a Full Stack Cloud Data Engineer based in Michigan, USA. Specialist in scalable data infrastructures, ETL, cloud (AWS, GCP, Azure), and Big Data.">
+    
+    <meta name="keywords" content="Lahari Iyyunni, Senior Data Engineer, Data Engineer, Big Data, ETL, AWS, GCP, Azure, PySpark, Airflow, Data Infrastructure">
+    
+
+    <meta name="author" content="Lahari Iyyunni">
+
+
+    <meta property="og:title" content="Lahari Iyyunni | Senior Data Engineer">
+
+    <meta property="og:description" content="Personal portfolio for Lahari Iyyunni, a Full Stack Cloud Data Leader. Specialist in scalable data infrastructures, ETL, cloud, and Big Data.">
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://LahariIyyunnill.github.io/">
+
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/66288088?s=400&u=1f936e5414f30a3905169bbd9e5d1c51e0e961f5&v=4">
+    
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Updated Tailwind Theme with Light/Dark Colors -->
+    <script>
+        tailwind.config = {
+            // Add dark mode support based on 'class'
+            darkMode: 'class', 
+            theme: {
+                extend: {
+                    colors: {
+                        'theme-lavender': '#897bc1',
+                        'theme-tangerine': '#fda649', // Updated from Amber
+                        'theme-hotpink': '#fe5bd6',
+                        
+                        // Dark Theme (your original colors)
+                        'dark-bg': '#2a2640',
+                        'dark-bg-med': '#3f3a5e',
+                        'dark-border': '#5a547c',
+                        'dark-text-light': '#e9e7f5',
+                        'dark-text-med': '#c0b8e6',
+
+                        // New Light Theme (with Cream background)
+                        'light-bg': '#faf7ed', // Cream background
+                        'light-bg-med': '#ffffff', // White for cards/nav for contrast
+                        'light-border': '#e7e3d8', // Border to match cream theme
+                        'light-text-dark': '#111827', // Darker text for better contrast
+                        'light-text-med': '#6b7280', // Medium text
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Theme initialization script (prevents flicker) -->
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #faf7ed; 
+            /* Light track for light mode (Cream) */
+        }
+        
+        html.dark ::-webkit-scrollbar-track {
+            background: #2a2640; /* dark-bg */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1; 
+            border-radius: 4px;
+        }
+        
+        html.dark ::-webkit-scrollbar-thumb {
+            background: #3f3a5e; /* dark-bg-med */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a1a1a1; 
+        }
+
+        html.dark ::-webkit-scrollbar-thumb:hover {
+            background: #5a547c; /* dark-border */
+        }
+
+        /* Gradient text (Tangerine to Hot Pink) */
+        .gradient-text {
+            background: linear-gradient(to right, #fda649, #fe5bd6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Gradient underline (Tangerine to Hot Pink) */
+        .gradient-underline {
+            background: linear-gradient(to right, #fda649, #fe5bd6);
+            height: 4px;
+            border: none;
+        }
+
+        /* Sticky nav padding */
+        html {
+            scroll-padding-top: 64px; /* Adjust based on sticky nav height (h-16 = 4rem = 64px) */
+        }
+
+        /* Hide scroll-to-top button by default */
+        #scrollTopBtn {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Show when 'show' class is added */
+        #scrollTopBtn.show {
+            display: flex;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<!-- Updated body classes for light/dark mode -->
+<body class="bg-light-bg text-light-text-dark dark:bg-dark-bg dark:text-dark-text-light antialiased transition-colors duration-300">
+
+    <!-- Main Container -->
+    <!-- Mobile-responsive padding -->
+    <div class="max-w-6xl mx-auto p-4 sm:p-12">
+
+        <!-- Header / Hero Section -->
+        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 sm:mb-16 min-h-[20vh] sm:min-h-0">
+            <div>
+                <!-- Mobile-responsive text sizes -->
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-light-text-dark dark:text-white">Lahari Iyyunni</h1>
+                <p class="text-lg sm:text-xl md:text-2xl text-theme-hotpink mt-2 font-medium">Full Stack Senior Cloud Data Engineer</p>
+                <p class="text-light-text-med dark:text-dark-text-med mt-3 flex items-center gap-2">
+            </div>
+            <!-- Social Links (Desktop-only) -->
+            <!-- These links are now hidden on mobile (md:flex) and shown in the nav bar -->
+            <div class="hidden md:flex gap-5 mt-6 sm:mt-0">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=liyyunni@umich.edu" target="_blank" rel="noopener noreferrer" title="Email" class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                    <i data-lucide="mail" class="w-7 h-7"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lahariiyyunni/" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                    class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v13h-4V8zm7.5 0h3.8v1.8h.1c.5-.9 1.8-1.8 3.6-1.8 3.9 0 4.6 2.6 4.6 6V21h-4v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V8z"/>
+  </svg>
+                    
+                </a>
+
+                
+                <!-- CORRECTED GITHUB LINK -->
+                <a href="https://github.com/LahariIyyunni" target="_blank" rel="noopener noreferrer" title="GitHub"
+                    class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+       class="w-7 h-7" 
+       viewBox="0 0 24 24" 
+       fill="currentColor">
+    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.56-.29-5.25-1.28-5.25-5.72 0-1.26.45-2.3 1.2-3.11-.12-.3-.52-1.52.12-3.17 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.65 1.65.25 2.87.13 3.17.75.81 1.2 1.85 1.2 3.11 0 4.45-2.7 5.43-5.27 5.71.42.36.8 1.08.8 2.18v3.23c0 .31.2.67.79.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+  </svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- Sticky Nav -->
+        <nav class="sticky top-0 z-50 bg-light-bg/80 dark:bg-dark-bg/80 backdrop-blur-md border-b border-light-border dark:border-dark-border/50 mb-12 sm:mb-16 transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between h-16 items-center">
+                    <!-- Nav Links (centered) - HIDE ON MOBILE -->
+                    <div class="hidden md:flex flex-1 justify-center">
+                        <!-- Mobile-responsive spacing -->
+                        <div class="flex space-x-4 sm:space-x-10 text-xs sm:text-base">
+                            <a href="#about" class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">About</a>
+                            <a href="#skills" class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">Skills</a>
+                            <a href="#experience" class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">Experience</a>
+                            <a href="#projects" class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">Projects</a>
+                            <a href="#education" class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">Education</a>
+                        </div>
+                    </div>
+
+                    <!-- Spacer for mobile to push buttons to the right -->
+                    <div class="flex-1 md:hidden">
+                        <!-- This space is intentionally left blank -->
+                    </div>
+
+                    <!-- Right-side controls: Social (Mobile) + Theme + Mobile Menu -->
+                    <div class="flex-shrink-0 flex items-center space-x-2">
+
+                        <!-- Mobile Social Links (NEW) -->
+                        <!-- These are shown only on mobile (md:hidden) -->
+                        <div class="flex items-center gap-3 md:hidden">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=liyyunni@umich.edu" target="_blank" rel="noopener noreferrer" title="Email" class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lahariiyyunni/" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                                class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v13h-4V8zm7.5 0h3.8v1.8h.1c.5-.9 1.8-1.8 3.6-1.8 3.9 0 4.6 2.6 4.6 6V21h-4v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V8z"/>
+  </svg>
+                            </a>
+                
+                            <a href="https://github.com/LahariIyyunni" target="_blank" rel="noopener noreferrer" title="GitHub"
+                                class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.56-.29-5.25-1.28-5.25-5.72 0-1.26.45-2.3 1.2-3.11-.12-.3-.52-1.52.12-3.17 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.65 1.65.25 2.87.13 3.17.75.81 1.2 1.85 1.2 3.11 0 4.45-2.7 5.43-5.27 5.71.42.36.8 1.08.8 2.18v3.23c0 .31.2.67.79.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+  </svg>
+                            </a>
+                        </div>
+
+                        <!-- Theme Toggle Button -->
+                        <button id="theme-toggle" type="button" class="p-2 rounded-md text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine dark:hover:text-theme-tangerine transition-colors duration-200">
+                            <span class="sr-only">Toggle theme</span>
+                            <!-- Moon icon, shown in light mode -->
+                            <i data-lucide="moon" class="w-6 h-6 dark:hidden"></i>
+                            <!-- Sun icon, shown in dark mode -->
+                            <i data-lucide="sun" class="w-6 h-6 hidden dark:inline"></i>
+                        </button>
+
+                        <!-- Mobile Menu Button (Hamburger Icon) - SHOW ON MOBILE -->
+                        <!-- UPDATED: Added gradient background and white icon for prominence -->
+                        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-md text-white bg-gradient-to-r from-theme-tangerine to-theme-hotpink hover:opacity-90 transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            <span class="sr-only">Open main menu</span>
+                            <i id="menu-icon-open" data-lucide="menu" class="w-6 h-6"></i>
+                            <i id="menu-icon-close" data-lucide="x" class="w-6 h-6 hidden"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (dropdown) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-light-bg-med dark:bg-dark-bg-med border-t border-light-border dark:border-dark-border/50">
+                <div class="px-4 pt-2 pb-4 space-y-2">
+                    <a href="#about" class="mobile-menu-link block px-3 py-2 rounded-md font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine hover:bg-light-border dark:hover:bg-dark-border">About</a>
+                    <a href="#skills" class="mobile-menu-link block px-3 py-2 rounded-md font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine hover:bg-light-border dark:hover:bg-dark-border">Skills</a>
+                    <a href="#experience" class="mobile-menu-link block px-3 py-2 rounded-md font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine hover:bg-light-border dark:hover:bg-dark-border">Experience</a>
+                    <a href="#blog" class="mobile-menu-link block px-3 py-2 rounded-md font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine hover:bg-light-border dark:hover:bg-dark-border">Projects</a>
+                    <a href="#education" class="mobile-menu-link block px-3 py-2 rounded-md font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine hover:bg-light-border dark:hover:bg-dark-border">Education</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <!-- Mobile-responsive section gaps -->
+        <main class="flex flex-col gap-16 sm:gap-24">
+
+            <!-- About Me Section -->
+            <section id="about">
+                <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">About Me</h2>
+                <hr class="gradient-underline w-24 mb-8">
+                <!-- Switched order on mobile: Image first, then text -->
+                <div class="flex flex-col-reverse md:flex-row items-start gap-10 md:gap-12">
+                    <div class="md:w-2/3 text-light-text-med dark:text-dark-text-med space-y-4 leading-relaxed text-base sm:text-lg">
+                        <p>
+                            Hello! I'm a Data and analytics professional with 8+ years of experience spanning data science, customer analytics, machine learning, data engineering, and enterprise data architecture, including extensive experience at Ford Motor Company. 
+                        </p>
+                        <p>
+                            I specialize in building and managing scalable data infrastructure, with a strong background in ETL workflows (Airflow), cloud platforms (GCP, AWS, Azure), and big data technologies like Spark, DataProc, BigQuery
+                        </p>
+                        <p>
+                            I have strong foundation in cloud data platforms, and enterprise data architecture. Progressively expanded technical scope from data science and analytics into technical direction, data product development, and enterprise architecture. Proven ability to translate complex and ambiguous business problems into scalable data solutions, partner across business and technical organizations, and connect technical execution to measurable business outcomes.
+                        </p>
+                        <div class="pt-2">
+                            <p class="mb-4">When I'm not designing data systems, here's what I enjoy:</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 text-light-text-med dark:text-dark-text-med">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="palette" class="w-5 h-5 text-theme-tangerine flex-shrink-0"></i>
+                                    <span>Painting</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="footprints" class="w-5 h-5 text-theme-tangerine flex-shrink-0"></i>
+                                    <span>Long walks</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="plane-takeoff" class="w-5 h-5 text-theme-tangerine flex-shrink-0"></i>
+                                    <span>Exploring new countries</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="baby" class="w-5 h-5 text-theme-tangerine flex-shrink-0"></i>
+                                    <span>Being a mom to a beautiful boy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 w-full flex-shrink-0">
+                        <img src="https://avatars.githubusercontent.com/u/66288088?s=400&u=1f936e5414f30a3905169bbd9e5d1c51e0e961f5&v=4" 
+                             alt="A profile picture of Lahari Iyyunni"
+                             class="rounded-lg shadow-xl w-full h-auto object-cover aspect-square border-4 border-light-border dark:border-dark-border transition-colors duration-300">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills / Tools Section -->
+            <section id="skills">
+                <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">Toolkit & Skills</h2>
+                <hr class="gradient-underline w-24 mb-8">
+                <div class="space-y-8">
+                    <!-- Category: Programming & Data -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">Core Data Engineering Stack</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">GCP (BigQuery, Dataproc, Cloud Storage, Cloud Functions)</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Processing (PySpark, spark streaming, batch pipelines)</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Languages (Python, SQL)</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Orchestration (Apache Airflow)</span>
+                        </div>
+                    </div>
+                    <!-- Category: AI / LLM Integration -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">AI / LLM Integration</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">LLM API integrations</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">GPT APIs</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Gemini APIs</span>
+                        </div>
+                    </div>
+                    <!-- Category: Data Engineering & Pipeline Development -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">Data Engineering & Pipeline Development</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">ETL / ELT pipeline development</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">dbt (data transformation & modelling)</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Data quality validation frameworks</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Dimensional modeling (star / data marts)</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Monitoring, SLAs, and alerting</span>
+                        </div>
+                    </div>
+                    <!-- Category: Data Warehousing & BI -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">Data Warehousing & BI</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Looker</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Qlikview</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">PowerBI</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Alteryx</span>
+                        </div>
+                    </div>
+                    <!-- Category: DevOps & Infrastructure -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">DevOps & Infrastructure</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Linux environments</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Git version control</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">Infrastructure as Code with Terraform</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">CI/CD pipelines with Tekton</span>
+                        </div>
+                    </div>
+                    <!-- Category: Databases -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">Databases</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">CloudSQL</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-1İ05 shadow-sm border border-light-border dark:border-transparent">PostgreSQL</span>
+                            <span class="bg-light-bg-med text-theme-hotpink dark:bg-dark-bg-med dark:text-theme-hotpink rounded-full px-4 py-1.5 text-sm font-medium transform transition-all duration-200 hover:bg-light-border dark:hover:bg-dark-border hover:scale-105 shadow-sm border border-light-border dark:border-transparent">MSSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section id="experience">
+                <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">Work Experience</h2>
+                <hr class="gradient-underline w-24 mb-12">
+                <!-- Timeline Container -->
+                <div class="relative space-y-12">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-3.5 top-2 h-full border-l-2 border-light-border dark:border-dark-border/70 transition-colors duration-300"></div>
+
+                    <!-- Experience 1: Ford Motor Company -->
+                    <div class="relative group">
+                        <div
+                            class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center transition-all duration-300 group-hover:border-theme-tangerine">
+                            <i data-lucide="briefcase" class="w-4 h-4 text-theme-tangerine"></i>
+                        </div>
+                        <div class="pl-12">
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white transition-colors duration-300 group-hover:text-theme-tangerine">Full Stack Sr Cloud Data Engineer</h3>
+                            <p class="text-light-text-med dark:text-dark-text-med my-1">Ford Motor Company | May 2021 - Present</p>
+                            <ul class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-3 text-base">
+                                <li>Developing and managing ETL workflows using Dagster, Airbyte, and Apache Spark for
+                                    scalable and resilient data processing.</li>
+                                <li>Transforming nested NoSQL structures (MongoDB) into structured, analytics-ready
+                                    formats.</li>
+                                <li>Designing and maintaining Lakehouse storage layers (Bronze, Silver, Gold) with
+                                    modular IO managers and SQL table traits.</li>
+                                <li>Building cloud-native data infrastructure leveraging AWS (S3, EC2, IAM).</li>
+                                <li>Orchestrating and deploying workloads on Kubernetes.</li>
+                                <li>Developing automated data quality checks in Dagster and improved reliability across data pipelines. Standardized metadata and table schemas to enhance traceability, governance, and overall pipeline transparency..</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2: Epitec.Inc -->
+                    <div class="relative group">
+                        <div
+                            class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center transition-all duration-300 group-hover:border-theme-tangerine">
+                            <i data-lucide="briefcase" class="w-4 h-4 text-theme-tangerine"></i>
+                        </div>
+                        <div class="pl-12">
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white transition-colors duration-300 group-hover:text-theme-tangerine">Data Engineer</h3>
+                            <p class="text-light-text-med dark:text-dark-text-med my-1">Epitec.Inc (Consultant for Ford Motor Company) | Aug 2018 - Apr 2021</p>
+                            <ul class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-3 text-base">
+                                <li>Managing pipelines and CI/CD (Apache Airflow, Bitbucket, Jenkins).</li>
+                                <li>Orchestrated the migration of Kafka streaming flow between servers.</li>
+                                <li>Processing data from different sources using Python, MongoDB, SQL.</li>
+                                <li>Monitoring and troubleshooting with real-time data flows (Apache Kafka, Spark,
+                                    Phoenix).</li>
+                                <li>Created dashboards for data flows and cluster monitoring with Python, Airflow and
+                                    Superset.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3: Delphi Technologies -->
+                    <div class="relative group">
+                        <div
+                            class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center transition-all duration-300 group-hover:border-theme-tangerine">
+                            <i data-lucide="briefcase" class="w-4 h-4 text-theme-tangerine"></i>
+                        </div>
+                        <div class="pl-12">
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white transition-colors duration-300 group-hover:text-theme-tangerine">Product Data Engineer</h3>
+                            <p class="text-light-text-med dark:text-dark-text-med my-1">Delphi Technologies | May 2018 - Aug 2018</p>
+                            <ul class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-3 text-base">
+                                <li>Built ETL/ELT pipelines on <strong>Azure SQL Database</strong> to create a transformed dataset for production defect correlation analysis.</li>
+                                <li>Automated root-cause analysis by processing <strong>10+ TB of production and quality data</strong> in <strong>PySpark and SQL</strong>, reducing manual investigation time by <strong>70%</strong>.</li>
+                                <li>Developed <strong>Python scripts and interactive Power BI dashboards</strong> to monitor defect trends across <strong>90+ plants</strong>, improving corrective maintenance response time by <strong>20%</strong>.</li>
+                                <li>Delivered insights that resulted in <strong>26% reduction in defects, 20% yield improvement</strong>, and estimated cost savings of <strong>$1.5M+ per year</strong>.</li>
+                                <li>Tech Stack: <strong>PySpark • Azure SQL • Python • Power BI</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+    
+                    <!-- Experience 3: Delphi Technologies -2 -->
+                    <div class="relative group">
+                        <div
+                            class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center transition-all duration-300 group-hover:border-theme-tangerine">
+                            <i data-lucide="briefcase" class="w-4 h-4 text-theme-tangerine"></i>
+                        </div>
+                        <div class="pl-12">
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white transition-colors duration-300 group-hover:text-theme-tangerine">Product Data Scientist - Rotation Program</h3>
+                            <p class="text-light-text-med dark:text-dark-text-med my-1">Delphi Technologies | Jul 2017 - Apr 2018</p>
+                            <ul class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-3 text-base">
+                                <li>Built an NLP-driven vehicle component matching and recommendation system to analyze product descriptions and compatibility data, enabling faster identification of aftermarket components.</li>
+                                <li><strong> Impact: Improved product discovery accuracy by 30% and reduced manual catalog matching efforts.</strong></li>
+                                <li>Tech Stack: <strong>Python • NLP •  Pandas • Scikit-learn</strong></li>
+                                <li>Developed automated market intelligence pipelines and interactive analytics dashboards to track competitor pricing and product trends across automotive marketplaces.</li>
+                                <li><strong> Impact: Reduced manual reporting time by 70% and enabled data-driven product and pricing decisions.</strong></li>
+                                <li>Tech Stack: <strong>Microsoft Power BI • Python •  Pandas • BeautifulSoup • Selenium</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4: Infosys (Data Scientist) -->
+                    <div class="relative group">
+                        <div
+                            class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center transition-all duration-300 group-hover:border-theme-tangerine">
+                            <i data-lucide="briefcase" class="w-4 h-4 text-theme-tangerine"></i>
+                        </div>
+                        <div class="pl-12">
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white transition-colors duration-300 group-hover:text-theme-tangerine">Data Scientist</h3>
+                            <p class="text-light-text-med dark:text-dark-text-med my-1">Infosys | May 2015 - Jun 2016</p>
+                            <ul class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-3 text-base">
+                                <li>Designed and maintained interactive dashboards and reports in Tableau and QlikView, enabling Citizens Bank stakeholders to monitor product performance, customer experience, and operational KPIs, driving faster, data-driven decisions.</li>
+                                <li>Conducted data validation, reconciliation, and transformation using SQL and Alteryx, ensuring accurate and reliable banking and survey datasets for risk, operations, and product teams. </li>
+                                <li>Delivered actionable statistical analysis and trend insights that led to a 4% reduction in product issues and enhanced customer satisfaction.</li>
+                                <li>Built automated reporting workflows integrating Tableau, SQL, and Alteryx, improving reporting efficiency, reducing manual effort, and standardizing insights across teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+<section id="projects">
+    <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">
+        Projects
+    </h2>
+    <hr class="gradient-underline w-24 mb-8">
+
+    <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Project 1 -->
+        <div class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
+            
+            <h3 class="text-xl font-bold text-light-text-dark dark:text-white mb-2">
+                Dynamic Pricing Engine
+            </h3>
+
+            <p class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
+                Machine learning pricing model for electric vehicles using demand signals, market trends,
+                and historical sales data to optimize pricing strategies.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Spark</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">ML</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">AWS</span>
+            </div>
+
+            <a href="https://github.com/" class="text-blue-500 hover:text-blue-600 text-sm font-medium">
+                View Code →
+            </a>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
+            
+            <h3 class="text-xl font-bold text-light-text-dark dark:text-white mb-2">
+                Data Quality Framework
+            </h3>
+
+            <p class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
+                Automated framework for validating datasets across ingestion and transformation layers
+                with configurable rules, anomaly detection, and pipeline alerts.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Spark</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Airflow</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">SQL</span>
+            </div>
+
+            <a href="https://github.com/" class="text-blue-500 hover:text-blue-600 text-sm font-medium">
+                View Code →
+            </a>
+
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
+            
+            <h3 class="text-xl font-bold text-light-text-dark dark:text-white mb-2">
+                Real-Time Data Pipeline
+            </h3>
+
+            <p class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
+                Streaming pipeline ingesting vehicle telemetry events and processing them in near real-time
+                to power analytics dashboards and monitoring systems.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">PySpark</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Kafka</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">BigQuery</span>
+                <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">Airflow</span>
+            </div>
+
+            <a href="https://github.com/" class="text-blue-500 hover:text-blue-600 text-sm font-medium">
+                View Code →
+            </a>
+
+        </div>
+
+    </div>
+</section>
+            
+
+            <!-- Education & Certifications Section -->
+            <section id="education">
+                <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">Education & Certifications</h2>
+                <hr class="gradient-underline w-24 mb-8">
+                <div class="space-y-8">
+                    <!-- Education -->
+                    <div class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-lg border border-light-border dark:border-dark-border/50 transition-colors duration-300 shadow-sm">
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">M.Sc. Business Analytics with Data and Financial Analytics</h3>
+                        <p class="text-light-text-med dark:text-dark-text-med mt-1"> University Of Michigan </p>
+
+                        <p class="text-light-text-med dark:text-dark-text-med text-sm">(Non Residential Scholarship)</p>
+                            <div class="flex items-center gap-3">
+                                    <i data-lucide="sparkle" class="w-5 h-5 text-theme-tangerine flex-shrink-0"></i>
+                                    <span>Graduated with Distinction</span>
+                            </div>
+                    </div>
+                       <div class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-lg border border-light-border dark:border-dark-border/50 transition-colors duration-300 shadow-sm">
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">B.Tech. Metallurgical and Material Science Engineering </h3>
+                        <p class="text-light-text-med dark:text-dark-text-med mt-1"> National Institute of Technology, Warangal </p>
+
+                        <p class="text-light-text-med dark:text-dark-text-med text-sm">(Merit Scholarship)</p>
+                           <div class="flex items-center gap-3">
+                                    <i data-lucide="sparkle" class="w-5 h-5 text-theme-tangerine flex-shrink-0"></i>
+                                    <span>Graduated with Distinction</span>
+                            </div>
+                    </div>                 
+                    <!-- Certifications -->
+                    <div class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-lg border border-light-border dark:border-dark-border/50 transition-colors duration-300 shadow-sm">
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white group-hover:text-theme-tangerine transition-colors">Google Professional Data Engineer</h3>
+                        </a>
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mt-4">AWS Certified Data Engineer - Associate</h3>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center text-light-text-med dark:text-dark-text-med opacity-70 mt-16 sm:mt-24 pt-10 border-t border-light-border dark:border-dark-border transition-colors duration-300">
+            <p>&copy; 2026 Lahari Iyyunni. Designed with a gradient of ☕ and ❤️‍🔥.</p>
+        </footer>
+
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="scrollTopBtn" title="Go to top" 
+            class="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 items-center justify-center w-12 h-12 rounded-full bg-theme-lavender/80 dark:bg-theme-lavender/90 text-white backdrop-blur-sm shadow-lg transform transition-all hover:scale-110 hover:bg-theme-lavender dark:hover:bg-theme-lavender">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Script to initialize Lucide icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Theme Toggle & Scroll-to-Top Script -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        const htmlElement = document.documentElement;
+
+        // Mobile Menu Elements
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        // Theme Toggle
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.theme = 'dark';
+            } else {
+                localStorage.theme = 'light';
+            }
+            // Re-initialize icons if they were hidden/shown
+            lucide.createIcons();
+        });
+
+        // Scroll to Top Button
+        window.onscroll = () => {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        };
+        
+        scrollTopBtn.addEventListener('click', () => {
+             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+            // Re-initialize icons
+            lucide.createIcons();
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+                // Re-initialize icons
+                lucide.createIcons();
+            });
+        });
+    </script>
+
+   
+       
+
+        
+
+
+</body>
+
+</html>
