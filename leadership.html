@@ -1,8 +1,8 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +10,41 @@
     <meta name="robots" content="index, follow">
 
     <meta name="description"
-        content="Professional portfolio of Lahari Iyyunni — Data Architect focused on enterprise data architecture, technical strategy, data products, cloud platforms, and scalable data solutions.">
+        content="Leadership portfolio for Lahari Iyyunni, a data and technology professional specializing in enterprise data architecture, cloud data platforms, AI/ML data products, and cross-functional technical leadership.">
 
     <meta name="keywords"
-        content="Lahari Iyyunni, Data Architect, Data Architecture, Enterprise Data Architecture, Technical Strategy, Data Products, Cloud Data, GCP, AWS, Big Data, Data Engineering">
+        content="Lahari Iyyunni, Data Architect, Data Engineering, Enterprise Data Architecture, Cloud Data, GCP, AWS, AI, ML, Data Products, Technical Leadership">
 
     <meta name="author" content="Lahari Iyyunni">
 
-    <meta property="og:title"
-        content="Lahari Iyyunni | Data Architecture & Technical Strategy">
+    <meta property="og:title" content="Lahari Iyyunni | Data Architecture & Technical Leadership">
 
     <meta property="og:description"
-        content="Professional portfolio of Lahari Iyyunni, a Data Architect focused on enterprise data architecture, technical strategy, data products, and scalable data solutions.">
+        content="Lahari Iyyunni — Data and technology professional specializing in enterprise data architecture, cloud data platforms, AI/ML data products, and technical leadership.">
 
     <meta property="og:type" content="website">
 
-    <meta property="og:url" content="https://LahariIyyunni.github.io/">
+    <meta property="og:url" content="https://LahariIyyunni.github.io/leadership.html">
 
     <meta property="og:image"
         content="https://avatars.githubusercontent.com/u/66288088?s=400&u=1f936e5414f30a3905169bbd9e5d1c51e0e961f5&v=4">
 
+    <title>Lahari Iyyunni | Data Architecture & Technical Leadership</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-
     <!-- Tailwind Configuration -->
-
     <script>
 
         tailwind.config = {
@@ -63,20 +58,30 @@
                     colors: {
 
                         'theme-lavender': '#897bc1',
+
                         'theme-tangerine': '#fda649',
+
                         'theme-hotpink': '#fe5bd6',
 
                         'dark-bg': '#2a2640',
+
                         'dark-bg-med': '#3f3a5e',
+
                         'dark-border': '#5a547c',
+
                         'dark-text-light': '#e9e7f5',
+
                         'dark-text-med': '#c0b8e6',
 
                         'light-bg': '#faf7ed',
+
                         'light-bg-med': '#ffffff',
+
                         'light-border': '#e7e3d8',
+
                         'light-text-dark': '#111827',
-                        'light-text-med': '#6b7280',
+
+                        'light-text-med': '#6b7280'
 
                     }
 
@@ -88,17 +93,13 @@
 
     </script>
 
-
     <!-- Theme Initialization -->
-
     <script>
 
         if (
             localStorage.theme === 'dark' ||
-            (
-                !('theme' in localStorage) &&
-                window.matchMedia('(prefers-color-scheme: dark)').matches
-            )
+            (!('theme' in localStorage) &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches)
         ) {
 
             document.documentElement.classList.add('dark');
@@ -111,66 +112,40 @@
 
     </script>
 
-
     <style>
 
         body {
-
             font-family: 'Inter', sans-serif;
-
         }
-
 
         ::-webkit-scrollbar {
-
             width: 8px;
-
         }
-
 
         ::-webkit-scrollbar-track {
-
             background: #faf7ed;
-
         }
-
 
         html.dark ::-webkit-scrollbar-track {
-
             background: #2a2640;
-
         }
-
 
         ::-webkit-scrollbar-thumb {
-
             background: #c1c1c1;
-
             border-radius: 4px;
-
         }
-
 
         html.dark ::-webkit-scrollbar-thumb {
-
             background: #3f3a5e;
-
         }
-
 
         ::-webkit-scrollbar-thumb:hover {
-
             background: #a1a1a1;
-
         }
-
 
         html.dark ::-webkit-scrollbar-thumb:hover {
-
             background: #5a547c;
-
         }
-
 
         .gradient-text {
 
@@ -186,7 +161,6 @@
 
         }
 
-
         .gradient-underline {
 
             background: linear-gradient(
@@ -201,13 +175,9 @@
 
         }
 
-
         html {
-
             scroll-padding-top: 64px;
-
         }
-
 
         #scrollTopBtn {
 
@@ -219,7 +189,6 @@
 
         }
 
-
         #scrollTopBtn.show {
 
             display: flex;
@@ -228,37 +197,12 @@
 
         }
 
-
-        .leadership-card {
-
-            transition:
-                transform 0.25s ease,
-                box-shadow 0.25s ease,
-                border-color 0.25s ease;
-
-        }
-
-
-        .leadership-card:hover {
-
-            transform: translateY(-4px);
-
-        }
-
-
-        .timeline-item:hover .timeline-icon {
-
-            border-color: #fda649;
-
-        }
-
     </style>
 
 </head>
 
 
-<body
-    class="bg-light-bg dark:bg-dark-bg text-light-text-dark dark:text-dark-text-light transition-colors duration-300">
+<body class="bg-light-bg dark:bg-dark-bg transition-colors duration-300">
 
 
 <!-- Main Container -->
@@ -270,117 +214,76 @@
     <!-- HERO -->
     <!-- ========================================================= -->
 
-    <header
-        class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 sm:mb-16 min-h-[20vh] sm:min-h-0">
+    <header class="mb-12 sm:mb-16">
 
-        <div>
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
 
-            <p
-                class="text-sm sm:text-base font-semibold tracking-widest uppercase text-theme-tangerine mb-3">
+            <div>
 
-                Data Architecture • Technical Strategy • Data Products
+                <p class="text-sm font-semibold tracking-widest uppercase text-theme-tangerine mb-3">
+                    Data Architecture • Technology • Innovation
+                </p>
 
-            </p>
+                <h1
+                    class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-light-text-dark dark:text-white">
+                    Lahari Iyyunni
+                </h1>
 
+                <p class="text-lg sm:text-xl md:text-2xl gradient-text mt-3 font-semibold">
+                    Data Architecture & Technical Leadership
+                </p>
 
-            <h1
-                class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-light-text-dark dark:text-white">
+                <p class="text-light-text-med dark:text-dark-text-med mt-4 max-w-2xl leading-relaxed">
 
-                Lahari Iyyunni
+                    Connecting business strategy, data architecture, and technology
+                    to build scalable data products and enable data-driven decisions.
 
-            </h1>
+                </p>
 
-
-            <p
-                class="text-lg sm:text-xl md:text-2xl text-theme-hotpink mt-3 font-medium">
-
-                Data Architect
-
-            </p>
-
-
-            <p
-                class="text-light-text-med dark:text-dark-text-med mt-3 max-w-2xl leading-relaxed">
-
-                Connecting business strategy, enterprise data architecture,
-                and technology to build scalable data products and
-                decision-making capabilities.
-
-            </p>
-
-        </div>
+            </div>
 
 
-        <!-- Social Links -->
+            <!-- Social Links -->
 
-        <div class="hidden md:flex gap-5 mt-6 sm:mt-0">
+            <div class="hidden md:flex gap-5 mt-6 sm:mt-0">
 
-            <!-- Email -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=liyyunni@umich.edu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Email"
+                    class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all">
 
-            <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=liyyunni@umich.edu"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Email"
-                class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                    <i data-lucide="mail" class="w-7 h-7"></i>
 
-                <i
-                    data-lucide="mail"
-                    class="w-7 h-7">
-                </i>
-
-            </a>
+                </a>
 
 
-            <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/lahariiyyunni/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="LinkedIn"
+                    class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all">
 
-            <a
-                href="https://www.linkedin.com/in/lahariiyyunni/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="LinkedIn"
-                class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                    <i data-lucide="linkedin" class="w-7 h-7"></i>
 
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 h-7"
-                    fill="currentColor"
-                    viewBox="0 0 24 24">
-
-                    <path
-                        d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v13h-4V8zm7.5 0h3.8v1.8h.1c.5-.9 1.8-1.8 3.6-1.8 3.9 0 4.6 2.6 4.6 6V21h-4v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V8z"/>
-
-                </svg>
-
-            </a>
+                </a>
 
 
-            <!-- GitHub -->
+                <a href="https://github.com/LahariIyyunni"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="GitHub"
+                    class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all">
 
-            <a
-                href="https://github.com/LahariIyyunni"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="GitHub"
-                class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transform hover:scale-110 transition-all duration-200">
+                    <i data-lucide="github" class="w-7 h-7"></i>
 
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 h-7"
-                    viewBox="0 0 24 24"
-                    fill="currentColor">
+                </a>
 
-                    <path
-                        d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.4-1.27.73-1.56-2.56-.29-5.25-1.28-5.25-5.72 0-1.26.45-2.3 1.2-3.11-.12-.3-.52-1.52.12-3.17 0 0 .97-.31 3.18 1.19a11.1 11.1 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.65 1.65.25 2.87.13 3.17.75.81 1.2 1.85 1.2 3.11 0 4.45-2.7 5.43-5.27 5.71.42.36.8 1.08.8 2.18v3.23c0 .31.2.67.79.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
-
-                </svg>
-
-            </a>
+            </div>
 
         </div>
 
     </header>
-
 
 
     <!-- ========================================================= -->
@@ -388,69 +291,44 @@
     <!-- ========================================================= -->
 
     <nav
-        class="sticky top-0 z-50 bg-light-bg/80 dark:bg-dark-bg/80 backdrop-blur-md border-b border-light-border dark:border-dark-border/50 mb-12 sm:mb-16 transition-colors duration-300">
+        class="sticky top-0 z-50 bg-light-bg/80 dark:bg-dark-bg/80 backdrop-blur-md border-b border-light-border dark:border-dark-border/50 mb-12 sm:mb-16">
 
         <div class="max-w-6xl mx-auto px-4">
 
             <div class="flex justify-between h-16 items-center">
 
-
                 <div class="hidden md:flex flex-1 justify-center">
 
-                    <div
-                        class="flex space-x-4 sm:space-x-10 text-xs sm:text-base">
+                    <div class="flex space-x-4 sm:space-x-8 text-xs sm:text-base">
 
-                        <a
-                            href="#about"
-                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">
-
+                        <a href="#about"
+                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition">
                             About
-
                         </a>
 
-
-                        <a
-                            href="#leadership"
-                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">
-
+                        <a href="#leadership"
+                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition">
                             Leadership
-
                         </a>
 
-
-                        <a
-                            href="#experience"
-                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">
-
+                        <a href="#experience"
+                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition">
                             Experience
-
                         </a>
 
-
-                        <a
-                            href="#architecture"
-                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">
-
+                        <a href="#architecture"
+                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition">
                             Architecture
-
                         </a>
 
-
-                        <a
-                            href="#projects"
-                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">
-
-                            Projects
-
+                        <a href="#impact"
+                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition">
+                            Impact
                         </a>
 
-
-                        <a
-                            href="#education"
-                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors duration-200">
-
+                        <a href="#education"
+                            class="font-medium text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition">
                             Education
-
                         </a>
 
                     </div>
@@ -458,61 +336,25 @@
                 </div>
 
 
-                <!-- Mobile Spacer -->
-
-                <div class="flex-1 md:hidden"></div>
-
-
-                <!-- Controls -->
-
                 <div class="flex-shrink-0 flex items-center space-x-2">
-
-
-                    <!-- Mobile Social Links -->
 
                     <div class="flex items-center gap-3 md:hidden">
 
-                        <a
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=liyyunni@umich.edu"
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=liyyunni@umich.edu"
                             target="_blank"
-                            rel="noopener noreferrer"
                             title="Email"
                             class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine">
 
-                            <i
-                                data-lucide="mail"
-                                class="w-6 h-6">
-                            </i>
+                            <i data-lucide="mail" class="w-6 h-6"></i>
 
                         </a>
 
-
-                        <a
-                            href="https://www.linkedin.com/in/lahariiyyunni/"
+                        <a href="https://www.linkedin.com/in/lahariiyyunni/"
                             target="_blank"
-                            rel="noopener noreferrer"
                             title="LinkedIn"
                             class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine">
 
-                            <i
-                                data-lucide="linkedin"
-                                class="w-6 h-6">
-                            </i>
-
-                        </a>
-
-
-                        <a
-                            href="https://github.com/LahariIyyunni"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="GitHub"
-                            class="text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine">
-
-                            <i
-                                data-lucide="github"
-                                class="w-6 h-6">
-                            </i>
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
 
                         </a>
 
@@ -521,50 +363,30 @@
 
                     <!-- Theme -->
 
-                    <button
-                        id="theme-toggle"
+                    <button id="theme-toggle"
                         type="button"
-                        class="p-2 rounded-md text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine transition-colors">
+                        class="p-2 rounded-md text-light-text-med dark:text-dark-text-med hover:text-theme-tangerine">
 
                         <span class="sr-only">
                             Toggle theme
                         </span>
 
-                        <i
-                            data-lucide="moon"
-                            class="w-6 h-6 dark:hidden">
-                        </i>
+                        <i data-lucide="moon" class="w-6 h-6 dark:hidden"></i>
 
-                        <i
-                            data-lucide="sun"
-                            class="w-6 h-6 hidden dark:inline">
-                        </i>
+                        <i data-lucide="sun" class="w-6 h-6 hidden dark:inline"></i>
 
                     </button>
 
 
                     <!-- Mobile Menu -->
 
-                    <button
-                        id="mobile-menu-btn"
+                    <button id="mobile-menu-btn"
                         type="button"
-                        class="md:hidden p-2 rounded-md text-white bg-gradient-to-r from-theme-tangerine to-theme-hotpink hover:opacity-90 transition-all duration-200">
+                        class="md:hidden p-2 rounded-md text-white bg-gradient-to-r from-theme-tangerine to-theme-hotpink shadow-lg">
 
-                        <span class="sr-only">
-                            Open main menu
-                        </span>
+                        <i id="menu-icon-open" data-lucide="menu" class="w-6 h-6"></i>
 
-                        <i
-                            id="menu-icon-open"
-                            data-lucide="menu"
-                            class="w-6 h-6">
-                        </i>
-
-                        <i
-                            id="menu-icon-close"
-                            data-lucide="x"
-                            class="w-6 h-6 hidden">
-                        </i>
+                        <i id="menu-icon-close" data-lucide="x" class="w-6 h-6 hidden"></i>
 
                     </button>
 
@@ -577,33 +399,32 @@
 
         <!-- Mobile Menu -->
 
-        <div
-            id="mobile-menu"
-            class="hidden md:hidden bg-light-bg-med dark:bg-dark-bg-med border-t border-light-border dark:border-dark-border/50">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-light-bg-med dark:bg-dark-bg-med border-t border-light-border dark:border-dark-border">
 
             <div class="px-4 pt-2 pb-4 space-y-2">
 
-                <a href="#about" class="mobile-menu-link block px-3 py-2 rounded-md font-medium">
+                <a href="#about" class="mobile-menu-link block px-3 py-2">
                     About
                 </a>
 
-                <a href="#leadership" class="mobile-menu-link block px-3 py-2 rounded-md font-medium">
+                <a href="#leadership" class="mobile-menu-link block px-3 py-2">
                     Leadership
                 </a>
 
-                <a href="#experience" class="mobile-menu-link block px-3 py-2 rounded-md font-medium">
+                <a href="#experience" class="mobile-menu-link block px-3 py-2">
                     Experience
                 </a>
 
-                <a href="#architecture" class="mobile-menu-link block px-3 py-2 rounded-md font-medium">
+                <a href="#architecture" class="mobile-menu-link block px-3 py-2">
                     Architecture
                 </a>
 
-                <a href="#projects" class="mobile-menu-link block px-3 py-2 rounded-md font-medium">
-                    Projects
+                <a href="#impact" class="mobile-menu-link block px-3 py-2">
+                    Impact
                 </a>
 
-                <a href="#education" class="mobile-menu-link block px-3 py-2 rounded-md font-medium">
+                <a href="#education" class="mobile-menu-link block px-3 py-2">
                     Education
                 </a>
 
@@ -614,13 +435,11 @@
     </nav>
 
 
-
     <!-- ========================================================= -->
     <!-- MAIN -->
     <!-- ========================================================= -->
 
     <main class="flex flex-col gap-16 sm:gap-24">
-
 
 
         <!-- ===================================================== -->
@@ -629,162 +448,108 @@
 
         <section id="about">
 
-            <h2
-                class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8 inline-block">
-
+            <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
                 About Me
-
             </h2>
 
             <hr class="gradient-underline w-24 mb-8">
 
 
-            <div
-                class="flex flex-col-reverse md:flex-row items-start gap-10 md:gap-12">
+            <div class="flex flex-col-reverse md:flex-row items-start gap-10 md:gap-12">
 
 
-                <div
-                    class="md:w-2/3 text-light-text-med dark:text-dark-text-med space-y-5 leading-relaxed text-base sm:text-lg">
-
+                <div class="md:w-2/3 text-light-text-med dark:text-dark-text-med space-y-5 leading-relaxed text-base sm:text-lg">
 
                     <p>
 
-                        I am a data and analytics professional with 8+ years of
-                        experience spanning data science, data engineering,
-                        customer analytics, AI/ML, and enterprise data
-                        architecture.
+                        I am a data and technology professional with 8+ years of experience
+                        spanning data science, customer analytics, data engineering,
+                        AI/ML data products, and enterprise data architecture.
 
                     </p>
 
 
                     <p>
 
-                        My career has progressively expanded from building
-                        analytical solutions to designing data platforms,
-                        shaping data products, and now working at the
-                        enterprise architecture level to connect business
-                        needs with data and technology strategy.
+                        My career has progressively expanded from solving analytical problems
+                        to designing scalable data platforms, shaping data products, and
+                        connecting technical solutions to broader business capabilities.
 
                     </p>
 
 
                     <p>
 
-                        I am particularly interested in problems where the
-                        technical solution is only part of the challenge —
-                        understanding the business context, creating alignment
-                        across teams, establishing the right data model, and
-                        building an approach that can scale beyond a single
-                        use case.
+                        In my current role in GDIA Architecture, I work across business,
+                        product, and technology teams to understand complex data landscapes,
+                        evaluate data sources, develop conceptual and canonical models,
+                        and translate business needs into scalable architectural solutions.
 
                     </p>
 
 
                     <p>
 
-                        In my current role, I work with business, product,
-                        and technical stakeholders to understand data
-                        landscapes, evaluate sources, develop conceptual and
-                        canonical models, and translate product needs into
-                        sustainable architecture.
+                        I bring a combination of technical depth, enterprise perspective,
+                        structured problem solving, and cross-functional influence to
+                        complex data and technology challenges.
 
                     </p>
 
 
-                    <div class="pt-4">
+                    <!-- Personal Section -->
 
-                        <p
-                            class="font-semibold text-light-text-dark dark:text-white mb-4">
+                    <div class="pt-5">
 
-                            What I bring
+                        <p class="mb-5 font-medium text-light-text-dark dark:text-white">
+
+                            Outside of work, I enjoy:
 
                         </p>
 
 
-                        <div
-                            class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
 
+                            <div class="flex items-center gap-3">
 
-                            <div class="flex items-start gap-3">
-
-                                <i
-                                    data-lucide="layers"
-                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0 mt-1">
+                                <i data-lucide="palette"
+                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0">
                                 </i>
 
-                                <span>
-                                    Enterprise data architecture
-                                </span>
+                                <span>Painting</span>
 
                             </div>
 
 
-                            <div class="flex items-start gap-3">
+                            <div class="flex items-center gap-3">
 
-                                <i
-                                    data-lucide="compass"
-                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0 mt-1">
+                                <i data-lucide="footprints"
+                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0">
                                 </i>
 
-                                <span>
-                                    Technical direction & solution design
-                                </span>
+                                <span>Long walks</span>
 
                             </div>
 
 
-                            <div class="flex items-start gap-3">
+                            <div class="flex items-center gap-3">
 
-                                <i
-                                    data-lucide="network"
-                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0 mt-1">
+                                <i data-lucide="plane-takeoff"
+                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0">
                                 </i>
 
-                                <span>
-                                    Cross-functional collaboration
-                                </span>
+                                <span>Exploring new countries</span>
 
                             </div>
 
 
-                            <div class="flex items-start gap-3">
+                            <div class="flex items-center gap-3">
 
-                                <i
-                                    data-lucide="database"
-                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0 mt-1">
+                                <i data-lucide="heart"
+                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0">
                                 </i>
 
-                                <span>
-                                    Scalable data products & platforms
-                                </span>
-
-                            </div>
-
-
-                            <div class="flex items-start gap-3">
-
-                                <i
-                                    data-lucide="brain"
-                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0 mt-1">
-                                </i>
-
-                                <span>
-                                    AI/ML data enablement
-                                </span>
-
-                            </div>
-
-
-                            <div class="flex items-start gap-3">
-
-                                <i
-                                    data-lucide="shield-check"
-                                    class="w-5 h-5 text-theme-tangerine flex-shrink-0 mt-1">
-                                </i>
-
-                                <span>
-                                    Data quality, governance & traceability
-                                </span>
+                                <span>Being a mom to a beautiful boy</span>
 
                             </div>
 
@@ -795,14 +560,14 @@
                 </div>
 
 
-                <!-- Image -->
+                <!-- Profile -->
 
                 <div class="md:w-1/3 w-full flex-shrink-0">
 
                     <img
                         src="https://avatars.githubusercontent.com/u/66288088?s=400&u=1f936e5414f30a3905169bbd9e5d1c51e0e961f5&v=4"
                         alt="Lahari Iyyunni"
-                        class="rounded-lg shadow-xl w-full h-auto object-cover aspect-square border-4 border-light-border dark:border-dark-border">
+                        class="rounded-lg shadow-xl w-full aspect-square object-cover border-4 border-light-border dark:border-dark-border">
 
                 </div>
 
@@ -811,168 +576,79 @@
         </section>
 
 
-
         <!-- ===================================================== -->
-        <!-- LEADERSHIP / INFLUENCE -->
+        <!-- LEADERSHIP -->
         <!-- ===================================================== -->
 
         <section id="leadership">
 
-            <h2
-                class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
-
-                How I Create Impact
-
+            <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
+                Leadership & Technical Influence
             </h2>
 
-            <hr class="gradient-underline w-24 mb-12">
+            <hr class="gradient-underline w-24 mb-10">
 
 
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
 
-                <!-- Card 1 -->
+                <div class="p-6 rounded-xl bg-light-bg-med dark:bg-dark-bg-med/50 border border-light-border dark:border-dark-border shadow-sm">
 
-                <div
-                    class="leadership-card bg-light-bg-med/70 dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
+                    <i data-lucide="compass"
+                        class="w-8 h-8 text-theme-tangerine mb-4">
+                    </i>
 
-                    <div
-                        class="w-12 h-12 rounded-lg bg-theme-tangerine/10 flex items-center justify-center mb-5">
-
-                        <i
-                            data-lucide="map"
-                            class="w-6 h-6 text-theme-tangerine">
-                        </i>
-
-                    </div>
-
-
-                    <h3
-                        class="text-xl font-bold text-light-text-dark dark:text-white mb-3">
-
-                        Connect Strategy to Technology
-
+                    <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-3">
+                        Technical Direction
                     </h3>
 
+                    <p class="text-light-text-med dark:text-dark-text-med leading-relaxed">
 
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
-
-                        Translate business problems and product objectives
-                        into clear data requirements, architecture decisions,
-                        and scalable technical approaches.
+                        Provide technical direction across complex data initiatives,
+                        helping teams translate business requirements into scalable
+                        data solutions and architectures.
 
                     </p>
 
                 </div>
 
 
+                <div class="p-6 rounded-xl bg-light-bg-med dark:bg-dark-bg-med/50 border border-light-border dark:border-dark-border shadow-sm">
 
-                <!-- Card 2 -->
+                    <i data-lucide="network"
+                        class="w-8 h-8 text-theme-tangerine mb-4">
+                    </i>
 
-                <div
-                    class="leadership-card bg-light-bg-med/70 dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
-
-                    <div
-                        class="w-12 h-12 rounded-lg bg-theme-hotpink/10 flex items-center justify-center mb-5">
-
-                        <i
-                            data-lucide="network"
-                            class="w-6 h-6 text-theme-hotpink">
-                        </i>
-
-                    </div>
-
-
-                    <h3
-                        class="text-xl font-bold text-light-text-dark dark:text-white mb-3">
-
-                        Create Alignment Across Teams
-
+                    <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-3">
+                        Cross-Functional Influence
                     </h3>
 
+                    <p class="text-light-text-med dark:text-dark-text-med leading-relaxed">
 
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
-
-                        Bring business, product, analytics, engineering, and
-                        architecture perspectives together to create shared
-                        understanding and practical paths forward.
+                        Connect business, product, analytics, engineering,
+                        and architecture teams to create alignment around
+                        data strategy and execution.
 
                     </p>
 
                 </div>
 
 
+                <div class="p-6 rounded-xl bg-light-bg-med dark:bg-dark-bg-med/50 border border-light-border dark:border-dark-border shadow-sm">
 
-                <!-- Card 3 -->
+                    <i data-lucide="layers"
+                        class="w-8 h-8 text-theme-tangerine mb-4">
+                    </i>
 
-                <div
-                    class="leadership-card bg-light-bg-med/70 dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
-
-                    <div
-                        class="w-12 h-12 rounded-lg bg-theme-lavender/10 flex items-center justify-center mb-5">
-
-                        <i
-                            data-lucide="layers-3"
-                            class="w-6 h-6 text-theme-lavender">
-                        </i>
-
-                    </div>
-
-
-                    <h3
-                        class="text-xl font-bold text-light-text-dark dark:text-white mb-3">
-
-                        Design for Scale
-
+                    <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-3">
+                        Enterprise Perspective
                     </h3>
 
+                    <p class="text-light-text-med dark:text-dark-text-med leading-relaxed">
 
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
-
-                        Look beyond individual pipelines and use cases to
-                        establish reusable data models, patterns, standards,
-                        and architecture that can support future capabilities.
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- Card 4 -->
-
-                <div
-                    class="leadership-card bg-light-bg-med/70 dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
-
-                    <div
-                        class="w-12 h-12 rounded-lg bg-theme-tangerine/10 flex items-center justify-center mb-5">
-
-                        <i
-                            data-lucide="users"
-                            class="w-6 h-6 text-theme-tangerine">
-                        </i>
-
-                    </div>
-
-
-                    <h3
-                        class="text-xl font-bold text-light-text-dark dark:text-white mb-3">
-
-                        Enable Others to Succeed
-
-                    </h3>
-
-
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
-
-                        Share technical knowledge, establish consistent
-                        engineering practices, and help teams navigate
-                        complex data and architecture decisions.
+                        Think beyond individual pipelines and applications
+                        to understand how data, capabilities, systems,
+                        and business processes connect across an enterprise.
 
                     </p>
 
@@ -981,7 +657,6 @@
             </div>
 
         </section>
-
 
 
         <!-- ===================================================== -->
@@ -990,11 +665,8 @@
 
         <section id="experience">
 
-            <h2
-                class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
-
-                Career Progression
-
+            <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
+                Experience
             </h2>
 
             <hr class="gradient-underline w-24 mb-12">
@@ -1003,23 +675,17 @@
             <div class="relative space-y-12">
 
 
-                <!-- Timeline -->
-
-                <div
-                    class="absolute left-3.5 top-2 h-full border-l-2 border-light-border dark:border-dark-border/70">
+                <div class="absolute left-3.5 top-2 h-full border-l-2 border-light-border dark:border-dark-border/70">
                 </div>
-
 
 
                 <!-- CURRENT ROLE -->
 
-                <div class="relative group timeline-item">
+                <div class="relative group">
 
-                    <div
-                        class="timeline-icon absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center transition-all duration-300">
+                    <div class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
 
-                        <i
-                            data-lucide="architecture"
+                        <i data-lucide="building-2"
                             class="w-4 h-4 text-theme-tangerine">
                         </i>
 
@@ -1028,77 +694,48 @@
 
                     <div class="pl-12">
 
-                        <div class="flex flex-wrap items-center gap-3">
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
 
-                            <h3
-                                class="text-xl font-semibold text-light-text-dark dark:text-white">
+                            Data Architect
 
-                                Data Architect
+                        </h3>
 
-                            </h3>
+                        <p class="text-light-text-med dark:text-dark-text-med my-1">
 
-
-                            <span
-                                class="text-xs px-3 py-1 rounded-full bg-theme-tangerine/10 text-theme-tangerine font-semibold">
-
-                                Current Role
-
-                            </span>
-
-                        </div>
-
-
-                        <p
-                            class="text-light-text-med dark:text-dark-text-med my-1">
-
-                            GDIA Architecture – Quality Hub | Jan 2026 – Present
+                            Ford Motor Company — GDIA Architecture, Quality Hub |
+                            Jan 2026 – Present
 
                         </p>
 
 
-                        <ul
-                            class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4 text-base">
-
+                        <ul class="list-disc ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4">
 
                             <li>
-                                Facilitate conceptual discussions to understand
-                                enterprise data landscapes, business needs,
-                                and candidate data sources.
+                                Lead conceptual discussions to understand enterprise
+                                data landscapes and identify candidate data sources.
                             </li>
 
-
                             <li>
-                                Develop conceptual and canonical data models
-                                that establish shared understanding of
-                                business concepts and data relationships.
+                                Develop conceptual and canonical domain models,
+                                data dictionaries, and reusable data structures.
                             </li>
 
-
                             <li>
-                                Map applications and data sources to business
-                                processes, capabilities, and enterprise
-                                architecture.
+                                Map applications to data models, business processes,
+                                and business capabilities to establish stronger
+                                enterprise traceability.
                             </li>
 
-
                             <li>
-                                Partner with product teams during intake to
-                                translate business use cases into data
-                                requirements and architecture considerations.
+                                Partner with product teams during intake to translate
+                                business use cases into data requirements and
+                                architecture guidance.
                             </li>
 
-
                             <li>
-                                Evaluate data quality, traceability, and
-                                sustainability considerations as part of
-                                architecture decisions.
-                            </li>
-
-
-                            <li>
-                                Work across business and technical stakeholders
-                                to create alignment around data definitions,
-                                models, and solution direction.
+                                Collaborate across business, product, engineering,
+                                and architecture teams to align technical solutions
+                                with long-term scalability and data quality.
                             </li>
 
                         </ul>
@@ -1106,18 +743,15 @@
                     </div>
 
                 </div>
-
 
 
                 <!-- THIRD PARTY -->
 
-                <div class="relative group timeline-item">
+                <div class="relative group">
 
-                    <div
-                        class="timeline-icon absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
+                    <div class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
 
-                        <i
-                            data-lucide="database-zap"
+                        <i data-lucide="database"
                             class="w-4 h-4 text-theme-tangerine">
                         </i>
 
@@ -1126,59 +760,42 @@
 
                     <div class="pl-12">
 
-                        <h3
-                            class="text-xl font-semibold text-light-text-dark dark:text-white">
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
 
-                            Third-Party Data Ingestion Lead
+                            Third-Party Ingestion Lead
 
                         </h3>
 
+                        <p class="text-light-text-med dark:text-dark-text-med my-1">
 
-                        <p
-                            class="text-light-text-med dark:text-dark-text-med my-1">
-
-                            Ford Motor Company | Jul 2023 – Dec 2025
+                            Ford Motor Company |
+                            Jul 2023 – Dec 2025
 
                         </p>
 
 
-                        <ul
-                            class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4 text-base">
-
+                        <ul class="list-disc ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4">
 
                             <li>
-                                Partnered with business stakeholders to
-                                understand third-party data requirements and
-                                translate them into technical implementation
-                                approaches.
+                                Partnered with business stakeholders to understand
+                                third-party data requirements and translate them
+                                into technical solutions.
                             </li>
-
 
                             <li>
                                 Provided technical direction for ingestion of
-                                third-party data into Ford's Google Cloud
-                                environment.
+                                third-party data into Ford's Google Cloud environment.
                             </li>
 
-
                             <li>
-                                Designed data-quality transformation models
-                                using GCP Dataproc and Spark.
+                                Designed data-quality transformation models using
+                                GCP Dataproc and Spark.
                             </li>
 
-
                             <li>
-                                Coordinated implementation activities across
-                                team members and stakeholders to establish
-                                consistent ingestion and transformation
-                                practices.
-                            </li>
-
-
-                            <li>
-                                Helped resolve data integration challenges,
-                                priorities, and quality concerns across
-                                business and technical teams.
+                                Coordinated implementation across team members and
+                                stakeholders to establish consistent approaches
+                                to ingestion, transformation, and quality.
                             </li>
 
                         </ul>
@@ -1186,18 +803,15 @@
                     </div>
 
                 </div>
-
 
 
                 <!-- TECHNICAL ANCHOR -->
 
-                <div class="relative group timeline-item">
+                <div class="relative group">
 
-                    <div
-                        class="timeline-icon absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
+                    <div class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
 
-                        <i
-                            data-lucide="compass"
+                        <i data-lucide="workflow"
                             class="w-4 h-4 text-theme-tangerine">
                         </i>
 
@@ -1206,57 +820,40 @@
 
                     <div class="pl-12">
 
-                        <h3
-                            class="text-xl font-semibold text-light-text-dark dark:text-white">
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
 
-                            Technical Anchor – Executive Command Center
+                            Technical Anchor — Executive Command Center
 
                         </h3>
 
+                        <p class="text-light-text-med dark:text-dark-text-med my-1">
 
-                        <p
-                            class="text-light-text-med dark:text-dark-text-med my-1">
-
-                            Ford Motor Company | May 2021 – Jul 2023
+                            Ford Motor Company |
+                            May 2021 – Jul 2023
 
                         </p>
 
 
-                        <ul
-                            class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4 text-base">
-
+                        <ul class="list-disc ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4">
 
                             <li>
-                                Provided technical direction for pipeline
+                                Provided technical direction across pipeline
                                 implementation, testing, and production launch.
                             </li>
 
-
                             <li>
                                 Partnered with Business and Product Owners to
-                                translate business requirements into scalable
-                                data solutions.
+                                translate requirements into scalable data solutions.
                             </li>
 
-
                             <li>
-                                Designed architecture for the Executive
-                                Command Center in alignment with enterprise
-                                Data Factory practices.
+                                Designed the Executive Command Center architecture
+                                in alignment with GDIA Data Factory guidelines.
                             </li>
 
-
                             <li>
-                                Helped establish implementation patterns and
-                                supported the team through technical delivery
-                                and production readiness.
-                            </li>
-
-
-                            <li>
-                                Worked across product, business, and engineering
-                                stakeholders to keep technical execution aligned
-                                with business objectives.
+                                Supported successful implementation and launch
+                                of the underlying data pipelines.
                             </li>
 
                         </ul>
@@ -1264,18 +861,15 @@
                     </div>
 
                 </div>
-
 
 
                 <!-- SENIOR DATA ENGINEER -->
 
-                <div class="relative group timeline-item">
+                <div class="relative group">
 
-                    <div
-                        class="timeline-icon absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
+                    <div class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
 
-                        <i
-                            data-lucide="cloud"
+                        <i data-lucide="cloud"
                             class="w-4 h-4 text-theme-tangerine">
                         </i>
 
@@ -1284,51 +878,39 @@
 
                     <div class="pl-12">
 
-                        <h3
-                            class="text-xl font-semibold text-light-text-dark dark:text-white">
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
 
-                            Senior Data Engineer – Dynamic Pricing
+                            Senior Data Engineer — Dynamic Pricing
 
                         </h3>
 
+                        <p class="text-light-text-med dark:text-dark-text-med my-1">
 
-                        <p
-                            class="text-light-text-med dark:text-dark-text-med my-1">
-
-                            Ford Motor Company | 2021 – 2023
+                            Ford Motor Company
 
                         </p>
 
 
-                        <ul
-                            class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4 text-base">
-
+                        <ul class="list-disc ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4">
 
                             <li>
-                                Provided technical guidance and training on
-                                migration of data transformations from Hadoop
-                                to GCP BigQuery.
+                                Guided migration of data transformations from Hadoop
+                                to GCP BigQuery using Vault services and Terraform/Tekton.
                             </li>
 
-
                             <li>
-                                Designed secure, scalable, high-performance
-                                data applications using cloud and big-data
-                                technologies.
+                                Designed secure, scalable, high-performance data
+                                applications supporting AI/ML use cases.
                             </li>
 
-
                             <li>
-                                Built curated data transformation pipelines
-                                supporting AI/ML-driven vehicle repricing
-                                models.
+                                Built curated datasets supporting vehicle repricing
+                                models and analytical decision-making.
                             </li>
 
-
                             <li>
-                                Partnered with Customer Experience Analytics
-                                and cross-functional teams to develop
-                                customer-centered data capabilities.
+                                Partnered with Customer Experience Analytics and
+                                cross-functional teams to develop data products.
                             </li>
 
                         </ul>
@@ -1336,18 +918,15 @@
                     </div>
 
                 </div>
-
 
 
                 <!-- DATA SCIENTIST -->
 
-                <div class="relative group timeline-item">
+                <div class="relative group">
 
-                    <div
-                        class="timeline-icon absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
+                    <div class="absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
 
-                        <i
-                            data-lucide="bar-chart-3"
+                        <i data-lucide="bar-chart-3"
                             class="w-4 h-4 text-theme-tangerine">
                         </i>
 
@@ -1356,51 +935,36 @@
 
                     <div class="pl-12">
 
-                        <h3
-                            class="text-xl font-semibold text-light-text-dark dark:text-white">
+                        <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
 
-                            Data Scientist – Customer Analytics
+                            Data Scientist
 
                         </h3>
 
+                        <p class="text-light-text-med dark:text-dark-text-med my-1">
 
-                        <p
-                            class="text-light-text-med dark:text-dark-text-med my-1">
-
-                            Ford Motor Company | Aug 2018 – May 2021
+                            Ford Motor Company |
+                            Aug 2018 – May 2021
 
                         </p>
 
 
-                        <ul
-                            class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4 text-base">
-
+                        <ul class="list-disc ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4">
 
                             <li>
                                 Developed customer-level and household-level
-                                analytical datasets using enterprise customer
-                                and external data sources.
+                                analytical datasets supporting sales and
+                                customer experience analytics.
                             </li>
 
-
                             <li>
-                                Performed data cleansing, normalization,
-                                matching, and metric development to support
-                                customer analytics.
+                                Normalized geographically distributed dealer,
+                                sales, and business metrics for enterprise reporting.
                             </li>
 
-
                             <li>
-                                Extracted and transformed sales and objective
-                                data from Hadoop/Hive to support enterprise
-                                reporting.
-                            </li>
-
-
-                            <li>
-                                Analyzed geographically distributed dealer and
-                                sales structures to improve consistency of
-                                enterprise metrics.
+                                Partnered with analytics and business teams to
+                                translate complex data into actionable insights.
                             </li>
 
                         </ul>
@@ -1409,149 +973,10 @@
 
                 </div>
 
-
-
-                <!-- DELPHI -->
-
-                <div class="relative group timeline-item">
-
-                    <div
-                        class="timeline-icon absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
-
-                        <i
-                            data-lucide="factory"
-                            class="w-4 h-4 text-theme-tangerine">
-                        </i>
-
-                    </div>
-
-
-                    <div class="pl-12">
-
-                        <h3
-                            class="text-xl font-semibold text-light-text-dark dark:text-white">
-
-                            Product Data Scientist / Data Engineer
-
-                        </h3>
-
-
-                        <p
-                            class="text-light-text-med dark:text-dark-text-med my-1">
-
-                            Delphi Technologies | Jul 2017 – Aug 2018
-
-                        </p>
-
-
-                        <ul
-                            class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4 text-base">
-
-
-                            <li>
-                                Built NLP-based product intelligence and
-                                recommendation capabilities for automotive
-                                components.
-                            </li>
-
-
-                            <li>
-                                Improved component compatibility matching
-                                accuracy by 30%.
-                            </li>
-
-
-                            <li>
-                                Conducted market demand and pricing analysis
-                                across thousands of automotive components.
-                            </li>
-
-
-                            <li>
-                                Partnered with product managers and engineering
-                                teams to translate business needs into
-                                data-driven solutions.
-                            </li>
-
-
-                            <li>
-                                Developed data solutions that reduced manual
-                                catalog matching and reporting effort.
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- INFOSYS -->
-
-                <div class="relative group timeline-item">
-
-                    <div
-                        class="timeline-icon absolute -left-0.5 top-1.5 w-8 h-8 bg-light-bg dark:bg-dark-bg rounded-full border-4 border-light-border dark:border-dark-border flex items-center justify-center">
-
-                        <i
-                            data-lucide="line-chart"
-                            class="w-4 h-4 text-theme-tangerine">
-                        </i>
-
-                    </div>
-
-
-                    <div class="pl-12">
-
-                        <h3
-                            class="text-xl font-semibold text-light-text-dark dark:text-white">
-
-                            Data Analyst
-
-                        </h3>
-
-
-                        <p
-                            class="text-light-text-med dark:text-dark-text-med my-1">
-
-                            Infosys – Citizens Bank Client | May 2015 – Jun 2016
-
-                        </p>
-
-
-                        <ul
-                            class="list-disc list-outside ml-5 text-light-text-med dark:text-dark-text-med space-y-2 mt-4 text-base">
-
-
-                            <li>
-                                Designed interactive dashboards supporting
-                                product performance, customer experience, and
-                                operational KPIs.
-                            </li>
-
-
-                            <li>
-                                Conducted data validation, reconciliation,
-                                and transformation using SQL and Alteryx.
-                            </li>
-
-
-                            <li>
-                                Partnered with risk, operations, and product
-                                teams to support data-driven decisions.
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
 
             </div>
 
         </section>
-
 
 
         <!-- ===================================================== -->
@@ -1560,515 +985,191 @@
 
         <section id="architecture">
 
-            <h2
-                class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
 
-                Architecture & Technical Perspective
+                Architecture & Data Capabilities
 
             </h2>
 
-            <hr class="gradient-underline w-24 mb-12">
+            <hr class="gradient-underline w-24 mb-10">
 
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
 
-                <div
-                    class="bg-light-bg-med dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
+                <div class="p-6 rounded-xl bg-light-bg-med dark:bg-dark-bg-med/50 border border-light-border dark:border-dark-border">
 
-                    <div class="flex items-center gap-3 mb-5">
+                    <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-4">
 
-                        <i
-                            data-lucide="boxes"
-                            class="w-6 h-6 text-theme-tangerine">
-                        </i>
+                        Enterprise Data Architecture
 
-                        <h3
-                            class="text-xl font-bold text-light-text-dark dark:text-white">
+                    </h3>
 
-                            Enterprise Data Architecture
-
-                        </h3>
-
-                    </div>
-
-
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
+                    <p class="text-light-text-med dark:text-dark-text-med leading-relaxed">
 
                         Conceptual data modeling, canonical domain models,
-                        data dictionaries, source evaluation, application
-                        mapping, business capability alignment, and
-                        architecture guidance.
+                        data dictionaries, business capability mapping,
+                        source-system analysis, and data traceability.
 
                     </p>
 
                 </div>
 
 
+                <div class="p-6 rounded-xl bg-light-bg-med dark:bg-dark-bg-med/50 border border-light-border dark:border-dark-border">
 
-                <div
-                    class="bg-light-bg-med dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
+                    <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-4">
 
-                    <div class="flex items-center gap-3 mb-5">
+                        Cloud Data Platforms
 
-                        <i
-                            data-lucide="workflow"
-                            class="w-6 h-6 text-theme-hotpink">
-                        </i>
+                    </h3>
 
-                        <h3
-                            class="text-xl font-bold text-light-text-dark dark:text-white">
+                    <p class="text-light-text-med dark:text-dark-text-med leading-relaxed">
 
-                            Data Product Thinking
-
-                        </h3>
-
-                    </div>
-
-
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
-
-                        Designing data capabilities around reusable business
-                        concepts, clear ownership, quality expectations,
-                        traceability, discoverability, and long-term
-                        sustainability.
+                        Google Cloud Platform, BigQuery, Dataproc, Spark,
+                        AWS, cloud-native data applications, and scalable
+                        data processing.
 
                     </p>
 
                 </div>
 
 
+                <div class="p-6 rounded-xl bg-light-bg-med dark:bg-dark-bg-med/50 border border-light-border dark:border-dark-border">
 
-                <div
-                    class="bg-light-bg-med dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
+                    <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-4">
 
-                    <div class="flex items-center gap-3 mb-5">
+                        Data Products & AI/ML
 
-                        <i
-                            data-lucide="brain-circuit"
-                            class="w-6 h-6 text-theme-lavender">
-                        </i>
+                    </h3>
 
-                        <h3
-                            class="text-xl font-bold text-light-text-dark dark:text-white">
+                    <p class="text-light-text-med dark:text-dark-text-med leading-relaxed">
 
-                            AI / ML Enablement
-
-                        </h3>
-
-                    </div>
-
-
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
-
-                        Experience building and enabling data capabilities
-                        that support machine learning, pricing models,
-                        customer analytics, product intelligence, and
-                        emerging AI use cases.
+                        AI/ML-ready datasets, customer analytics,
+                        recommendation systems, dynamic pricing,
+                        data products, and analytical platforms.
 
                     </p>
 
                 </div>
 
 
+                <div class="p-6 rounded-xl bg-light-bg-med dark:bg-dark-bg-med/50 border border-light-border dark:border-dark-border">
 
-                <div
-                    class="bg-light-bg-med dark:bg-dark-bg-med/50 p-7 rounded-xl border border-light-border dark:border-dark-border shadow-sm">
+                    <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-4">
 
-                    <div class="flex items-center gap-3 mb-5">
+                        Data Quality & Governance
 
-                        <i
-                            data-lucide="shield-check"
-                            class="w-6 h-6 text-theme-tangerine">
-                        </i>
+                    </h3>
 
-                        <h3
-                            class="text-xl font-bold text-light-text-dark dark:text-white">
+                    <p class="text-light-text-med dark:text-dark-text-med leading-relaxed">
 
-                            Quality & Governance
-
-                        </h3>
-
-                    </div>
-
-
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med leading-relaxed">
-
-                        Focus on data quality, traceability, standardization,
-                        metadata, governance, and architectural decisions that
-                        make data trustworthy and reusable.
+                        Data quality frameworks, validation, metadata,
+                        traceability, governance, standardization,
+                        and reliable analytical datasets.
 
                     </p>
 
                 </div>
+
 
             </div>
 
         </section>
 
 
-
         <!-- ===================================================== -->
-        <!-- PROJECTS -->
+        <!-- IMPACT -->
         <!-- ===================================================== -->
 
-        <section id="projects">
+        <section id="impact">
 
-            <h2
-                class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
 
-                Selected Work
+                Selected Impact
 
             </h2>
 
-            <hr class="gradient-underline w-24 mb-12">
+            <hr class="gradient-underline w-24 mb-10">
 
 
-            <div
-                id="project-grid"
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
 
-                <!-- Project 1 -->
+                <div class="p-6 rounded-xl border border-light-border dark:border-dark-border bg-light-bg-med dark:bg-dark-bg-med/50">
 
-                <div
-                    class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
-
-                    <div
-                        class="w-10 h-10 rounded-lg bg-theme-tangerine/10 flex items-center justify-center mb-5">
-
-                        <i
-                            data-lucide="circle-dollar-sign"
-                            class="w-5 h-5 text-theme-tangerine">
-                        </i>
-
-                    </div>
-
-
-                    <h3
-                        class="text-xl font-bold text-light-text-dark dark:text-white mb-3">
-
-                        Dynamic Pricing
-
-                    </h3>
-
-
-                    <p
-                        class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
-
-                        Data capabilities supporting AI/ML-driven vehicle
-                        repricing through curated datasets, demand signals,
-                        market trends, and historical sales data.
-
+                    <p class="text-4xl font-extrabold gradient-text">
+                        30%
                     </p>
 
+                    <h3 class="font-semibold text-light-text-dark dark:text-white mt-3">
+                        Improved Matching Accuracy
+                    </h3>
 
-                    <div class="flex flex-wrap gap-2">
+                    <p class="text-sm text-light-text-med dark:text-dark-text-med mt-2">
 
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Python
-                        </span>
+                        ML-driven automotive component recommendation
+                        and product intelligence.
 
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Spark
-                        </span>
-
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            GCP
-                        </span>
-
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            ML
-                        </span>
-
-                    </div>
+                    </p>
 
                 </div>
 
 
+                <div class="p-6 rounded-xl border border-light-border dark:border-dark-border bg-light-bg-med dark:bg-dark-bg-med/50">
 
-                <!-- Project 2 -->
-
-                <div
-                    class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
-
-                    <div
-                        class="w-10 h-10 rounded-lg bg-theme-hotpink/10 flex items-center justify-center mb-5">
-
-                        <i
-                            data-lucide="badge-check"
-                            class="w-5 h-5 text-theme-hotpink">
-                        </i>
-
-                    </div>
-
-
-                    <h3
-                        class="text-xl font-bold text-light-text-dark dark:text-white mb-3">
-
-                        Data Quality & Traceability
-
-                    </h3>
-
-
-                    <p
-                        class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
-
-                        Framework and architectural patterns for improving
-                        data validation, lineage, metadata consistency,
-                        traceability, and trust across data pipelines.
-
+                    <p class="text-4xl font-extrabold gradient-text">
+                        70%
                     </p>
 
+                    <h3 class="font-semibold text-light-text-dark dark:text-white mt-3">
+                        Reduced Manual Analysis
+                    </h3>
 
-                    <div class="flex flex-wrap gap-2">
+                    <p class="text-sm text-light-text-med dark:text-dark-text-med mt-2">
 
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Python
-                        </span>
+                        Automated data and analytics workflows
+                        across complex automotive datasets.
 
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Spark
-                        </span>
-
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            SQL
-                        </span>
-
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Data Quality
-                        </span>
-
-                    </div>
+                    </p>
 
                 </div>
 
 
+                <div class="p-6 rounded-xl border border-light-border dark:border-dark-border bg-light-bg-med dark:bg-dark-bg-med/50">
 
-                <!-- Project 3 -->
+                    <p class="text-4xl font-extrabold gradient-text">
+                        $1.5M+
+                    </p>
 
-                <div
-                    class="bg-light-bg-med/50 dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border shadow-sm hover:shadow-lg transition duration-300">
-
-                    <div
-                        class="w-10 h-10 rounded-lg bg-theme-lavender/10 flex items-center justify-center mb-5">
-
-                        <i
-                            data-lucide="network"
-                            class="w-5 h-5 text-theme-lavender">
-                        </i>
-
-                    </div>
-
-
-                    <h3
-                        class="text-xl font-bold text-light-text-dark dark:text-white mb-3">
-
-                        Enterprise Data Modeling
-
+                    <h3 class="font-semibold text-light-text-dark dark:text-white mt-3">
+                        Estimated Annual Savings
                     </h3>
 
+                    <p class="text-sm text-light-text-med dark:text-dark-text-med mt-2">
 
-                    <p
-                        class="text-sm text-light-text-med dark:text-dark-text-med leading-relaxed mb-4">
-
-                        Conceptual and canonical modeling approach for
-                        connecting business concepts, facts, dimensions,
-                        source systems, applications, and business
-                        capabilities.
+                        Impact from production quality analytics
+                        and data-driven defect reduction initiatives.
 
                     </p>
 
-
-                    <div class="flex flex-wrap gap-2">
-
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Data Modeling
-                        </span>
-
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Architecture
-                        </span>
-
-                        <span class="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">
-                            Governance
-                        </span>
-
-                    </div>
-
                 </div>
+
 
             </div>
 
         </section>
 
 
-
         <!-- ===================================================== -->
-        <!-- TOOLKIT -->
-        <!-- ===================================================== -->
-
-        <section id="skills">
-
-            <h2
-                class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
-
-                Technical Foundation
-
-            </h2>
-
-            <hr class="gradient-underline w-24 mb-12">
-
-
-            <div class="space-y-8">
-
-
-                <div>
-
-                    <h3
-                        class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">
-
-                        Cloud & Data Platforms
-
-                    </h3>
-
-
-                    <div class="flex flex-wrap gap-3">
-
-                        <span class="skill">Google Cloud Platform</span>
-                        <span class="skill">BigQuery</span>
-                        <span class="skill">Dataproc</span>
-                        <span class="skill">AWS</span>
-                        <span class="skill">S3</span>
-                        <span class="skill">Azure</span>
-                        <span class="skill">Hadoop</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div>
-
-                    <h3
-                        class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">
-
-                        Data Engineering
-
-                    </h3>
-
-
-                    <div class="flex flex-wrap gap-3">
-
-                        <span class="skill">Python</span>
-                        <span class="skill">SQL</span>
-                        <span class="skill">PySpark</span>
-                        <span class="skill">Apache Spark</span>
-                        <span class="skill">Airflow</span>
-                        <span class="skill">Dagster</span>
-                        <span class="skill">ETL / ELT</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div>
-
-                    <h3
-                        class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">
-
-                        Architecture & Modeling
-
-                    </h3>
-
-
-                    <div class="flex flex-wrap gap-3">
-
-                        <span class="skill">Conceptual Data Modeling</span>
-                        <span class="skill">Canonical Data Models</span>
-                        <span class="skill">Dimensional Modeling</span>
-                        <span class="skill">Data Dictionaries</span>
-                        <span class="skill">Data Quality</span>
-                        <span class="skill">Data Governance</span>
-                        <span class="skill">Data Products</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div>
-
-                    <h3
-                        class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">
-
-                        DevOps & Infrastructure
-
-                    </h3>
-
-
-                    <div class="flex flex-wrap gap-3">
-
-                        <span class="skill">Terraform</span>
-                        <span class="skill">Tekton</span>
-                        <span class="skill">Kubernetes</span>
-                        <span class="skill">Git</span>
-                        <span class="skill">CI/CD</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div>
-
-                    <h3
-                        class="text-lg font-semibold text-light-text-dark dark:text-white mb-4">
-
-                        Analytics & AI
-
-                    </h3>
-
-
-                    <div class="flex flex-wrap gap-3">
-
-                        <span class="skill">Machine Learning</span>
-                        <span class="skill">NLP</span>
-                        <span class="skill">AI/ML Data Products</span>
-                        <span class="skill">Power BI</span>
-                        <span class="skill">QlikView</span>
-                        <span class="skill">Tableau</span>
-                        <span class="skill">Alteryx</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ===================================================== -->
-        <!-- EDUCATION -->
+        <!-- EDUCATION & CERTIFICATIONS -->
         <!-- ===================================================== -->
 
         <section id="education">
 
-            <h2
-                class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-light-text-dark dark:text-white mb-8">
 
-                Education & Recognition
+                Education & Certifications
 
             </h2>
 
@@ -2078,164 +1179,196 @@
             <div class="space-y-6">
 
 
-                <div
-                    class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-lg border border-light-border dark:border-dark-border shadow-sm">
+                <!-- Master's -->
 
-                    <h3
-                        class="text-xl font-semibold text-light-text-dark dark:text-white">
+                <div class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border">
 
-                        Master of Science in Business Analytics
+                    <div class="flex items-start gap-4">
 
-                    </h3>
-
-
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med mt-1">
-
-                        University of Michigan
-
-                    </p>
-
-
-                    <p
-                        class="text-sm text-light-text-med dark:text-dark-text-med mt-2">
-
-                        Concentration: Data Science • GPA: 3.77/4.0
-
-                    </p>
-
-
-                    <div
-                        class="flex items-center gap-3 mt-3">
-
-                        <i
-                            data-lucide="award"
-                            class="w-5 h-5 text-theme-tangerine">
+                        <i data-lucide="graduation-cap"
+                            class="w-7 h-7 text-theme-tangerine flex-shrink-0 mt-1">
                         </i>
 
-                        <span>
-                            Graduated with Distinction • Dean's List – Top 1%
-                        </span>
+                        <div>
+
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
+
+                                M.S. Business Analytics — Data Science
+
+                            </h3>
+
+                            <p class="text-light-text-med dark:text-dark-text-med mt-1">
+
+                                University of Michigan
+
+                            </p>
+
+                            <p class="text-sm text-light-text-med dark:text-dark-text-med mt-2">
+
+                                Graduated with Distinction • GPA: 3.77/4.0
+
+                            </p>
+
+                            <p class="text-sm text-theme-tangerine mt-1">
+
+                                Dean's List — Top 1% of Program
+
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
 
 
+                <!-- Bachelor's -->
 
-                <div
-                    class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-lg border border-light-border dark:border-dark-border shadow-sm">
+                <div class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border">
 
-                    <h3
-                        class="text-xl font-semibold text-light-text-dark dark:text-white">
+                    <div class="flex items-start gap-4">
 
-                        Bachelor of Technology (Hons.)
-
-                    </h3>
-
-
-                    <p
-                        class="text-light-text-med dark:text-dark-text-med mt-1">
-
-                        National Institute of Technology, Warangal
-
-                    </p>
-
-
-                    <p
-                        class="text-sm text-light-text-med dark:text-dark-text-med mt-2">
-
-                        Metallurgical and Materials Engineering • GPA: 3.85/4.0
-
-                    </p>
-
-
-                    <div
-                        class="flex items-center gap-3 mt-3">
-
-                        <i
-                            data-lucide="award"
-                            class="w-5 h-5 text-theme-tangerine">
+                        <i data-lucide="graduation-cap"
+                            class="w-7 h-7 text-theme-tangerine flex-shrink-0 mt-1">
                         </i>
 
-                        <span>
-                            Graduated with Distinction
-                        </span>
+                        <div>
+
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
+
+                                B.Tech. Metallurgical & Materials Engineering
+
+                            </h3>
+
+                            <p class="text-light-text-med dark:text-dark-text-med mt-1">
+
+                                National Institute of Technology, Warangal
+
+                            </p>
+
+                            <p class="text-sm text-light-text-med dark:text-dark-text-med mt-2">
+
+                                Graduated with Distinction • GPA: 3.85/4.0
+
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
 
 
+                <!-- Certifications -->
 
-                <!-- Recognition -->
+                <div class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border">
 
-                <div
-                    class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-lg border border-light-border dark:border-dark-border shadow-sm">
+                    <div class="flex items-start gap-4">
 
-                    <h3
-                        class="text-xl font-semibold text-light-text-dark dark:text-white mb-5">
+                        <i data-lucide="badge-check"
+                            class="w-7 h-7 text-theme-tangerine flex-shrink-0 mt-1">
+                        </i>
 
-                        Recognition
+                        <div class="w-full">
 
-                    </h3>
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white mb-5">
+
+                                Professional Certifications
+
+                            </h3>
 
 
-                    <div class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
 
-                        <div class="flex items-start gap-3">
+                                <div class="p-4 rounded-lg border border-light-border dark:border-dark-border">
 
-                            <i
-                                data-lucide="trophy"
-                                class="w-5 h-5 text-theme-tangerine flex-shrink-0 mt-1">
-                            </i>
+                                    <p class="font-medium text-light-text-dark dark:text-white">
 
-                            <div>
+                                        Google Professional Data Engineer
 
-                                <p class="font-semibold">
+                                    </p>
 
-                                    Best Driving Force Lead – Ford Motor Company
+                                    <p class="text-sm text-light-text-med dark:text-dark-text-med mt-1">
 
-                                </p>
+                                        Google Cloud
 
-                                <p
-                                    class="text-sm text-light-text-med dark:text-dark-text-med">
+                                    </p>
 
-                                    Recognized for outstanding contribution
-                                    and leadership in 2021 and 2022.
+                                </div>
 
-                                </p>
+
+                                <div class="p-4 rounded-lg border border-light-border dark:border-dark-border">
+
+                                    <p class="font-medium text-light-text-dark dark:text-white">
+
+                                        AWS Certified Data Engineer – Associate
+
+                                    </p>
+
+                                    <p class="text-sm text-light-text-med dark:text-dark-text-med mt-1">
+
+                                        Amazon Web Services
+
+                                    </p>
+
+                                </div>
+
 
                             </div>
 
                         </div>
 
+                    </div>
 
-                        <div class="flex items-start gap-3">
+                </div>
 
-                            <i
-                                data-lucide="star"
-                                class="w-5 h-5 text-theme-hotpink flex-shrink-0 mt-1">
-                            </i>
 
-                            <div>
+                <!-- Awards -->
 
-                                <p class="font-semibold">
+                <div class="bg-light-bg-med dark:bg-dark-bg-med/50 p-6 rounded-xl border border-light-border dark:border-dark-border">
 
-                                    Customer Champion – Infosys
+                    <div class="flex items-start gap-4">
 
-                                </p>
+                        <i data-lucide="award"
+                            class="w-7 h-7 text-theme-tangerine flex-shrink-0 mt-1">
+                        </i>
 
-                                <p
-                                    class="text-sm text-light-text-med dark:text-dark-text-med">
+                        <div>
 
-                                    Recognized for successful implementation
-                                    of a customer experience dashboard.
+                            <h3 class="text-xl font-semibold text-light-text-dark dark:text-white">
 
-                                </p>
+                                Recognition
 
-                            </div>
+                            </h3>
+
+                            <p class="text-light-text-med dark:text-dark-text-med mt-3">
+
+                                <strong>Best Driving Force Lead</strong> —
+                                Ford Motor Company, 2021 & 2022
+
+                            </p>
+
+                            <p class="text-light-text-med dark:text-dark-text-med mt-2">
+
+                                Recognized for outstanding contribution
+                                and technical leadership.
+
+                            </p>
+
+                            <p class="text-light-text-med dark:text-dark-text-med mt-4">
+
+                                <strong>Customer Champion</strong> —
+                                Infosys, 2016
+
+                            </p>
+
+                            <p class="text-light-text-med dark:text-dark-text-med mt-2">
+
+                                Recognized for successful implementation
+                                of a customer experience dashboard.
+
+                            </p>
 
                         </div>
 
@@ -2249,9 +1382,7 @@
         </section>
 
 
-
     </main>
-
 
 
     <!-- ========================================================= -->
@@ -2263,8 +1394,7 @@
 
         <p>
             © 2026 Lahari Iyyunni.
-            Building data capabilities that connect strategy,
-            technology, and impact.
+            Data • Architecture • Technology • Impact.
         </p>
 
     </footer>
@@ -2273,107 +1403,41 @@
 </div>
 
 
+<!-- Scroll To Top -->
 
-<!-- ============================================================= -->
-<!-- BACK TO TOP -->
-<!-- ============================================================= -->
-
-<button
-    id="scrollTopBtn"
+<button id="scrollTopBtn"
     title="Go to top"
     class="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 items-center justify-center w-12 h-12 rounded-full bg-theme-lavender/80 text-white backdrop-blur-sm shadow-lg transform transition-all hover:scale-110">
 
-    <i
-        data-lucide="arrow-up"
-        class="w-6 h-6">
-    </i>
+    <i data-lucide="arrow-up" class="w-6 h-6"></i>
 
 </button>
 
 
-
-<!-- ============================================================= -->
-<!-- CUSTOM SKILL STYLES -->
-<!-- ============================================================= -->
-
-<style>
-
-    .skill {
-
-        background: rgba(255,255,255,0.7);
-
-        color: #fe5bd6;
-
-        border-radius: 9999px;
-
-        padding: 0.375rem 1rem;
-
-        font-size: 0.875rem;
-
-        font-weight: 500;
-
-        border: 1px solid #e7e3d8;
-
-        transition: all 0.2s ease;
-
-    }
-
-
-    .skill:hover {
-
-        transform: translateY(-2px);
-
-        background: #f3efe4;
-
-    }
-
-
-    html.dark .skill {
-
-        background: #3f3a5e;
-
-        color: #fe5bd6;
-
-        border-color: transparent;
-
-    }
-
-
-    html.dark .skill:hover {
-
-        background: #5a547c;
-
-    }
-
-</style>
-
-
-
-<!-- ============================================================= -->
+<!-- ========================================================= -->
 <!-- JAVASCRIPT -->
-<!-- ============================================================= -->
+<!-- ========================================================= -->
 
 <script>
 
     lucide.createIcons();
 
 
-
-    /* =========================================================
-       THEME TOGGLE
-    ========================================================= */
-
     const themeToggleBtn =
         document.getElementById('theme-toggle');
+
+    const scrollTopBtn =
+        document.getElementById('scrollTopBtn');
 
     const htmlElement =
         document.documentElement;
 
 
+    /* Theme Toggle */
+
     themeToggleBtn.addEventListener('click', () => {
 
         htmlElement.classList.toggle('dark');
-
 
         if (htmlElement.classList.contains('dark')) {
 
@@ -2385,20 +1449,12 @@
 
         }
 
-
         lucide.createIcons();
 
     });
 
 
-
-    /* =========================================================
-       SCROLL TO TOP
-    ========================================================= */
-
-    const scrollTopBtn =
-        document.getElementById('scrollTopBtn');
-
+    /* Scroll To Top */
 
     window.onscroll = () => {
 
@@ -2431,10 +1487,7 @@
     });
 
 
-
-    /* =========================================================
-       MOBILE MENU
-    ========================================================= */
+    /* Mobile Menu */
 
     const mobileMenuBtn =
         document.getElementById('mobile-menu-btn');
@@ -2475,8 +1528,6 @@
 
             menuIconClose.classList.add('hidden');
 
-            lucide.createIcons();
-
         });
 
     });
@@ -2487,3 +1538,4 @@
 </body>
 
 </html>
+```
